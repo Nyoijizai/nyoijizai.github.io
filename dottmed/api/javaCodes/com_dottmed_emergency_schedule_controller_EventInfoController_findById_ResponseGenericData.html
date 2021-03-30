@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private EventInfo data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public EventInfo getData(){
+        return data;
+    }
+
+    public void setData(EventInfo data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class EventInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private String eventName; //事件名称
+    private int eventType; //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他
+    private int eventSource; //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门
+    private int eventStatus; //事件状态：1 进行中， 2 已结束
+    private int maintenance; //维修/保养：1 维修， 2 保养
+    private String remark; //描述
+    private int createMan; //创建人(登录用户表ID)
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getEventName(){
+        return eventName;
+    }
+
+    public void setEventName(String eventName){
+        this.eventName = eventName;
+    }
+
+    public int getEventType(){
+        return eventType;
+    }
+
+    public void setEventType(int eventType){
+        this.eventType = eventType;
+    }
+
+    public int getEventSource(){
+        return eventSource;
+    }
+
+    public void setEventSource(int eventSource){
+        this.eventSource = eventSource;
+    }
+
+    public int getEventStatus(){
+        return eventStatus;
+    }
+
+    public void setEventStatus(int eventStatus){
+        this.eventStatus = eventStatus;
+    }
+
+    public int getMaintenance(){
+        return maintenance;
+    }
+
+    public void setMaintenance(int maintenance){
+        this.maintenance = maintenance;
+    }
+
+    public String getRemark(){
+        return remark;
+    }
+
+    public void setRemark(String remark){
+        this.remark = remark;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

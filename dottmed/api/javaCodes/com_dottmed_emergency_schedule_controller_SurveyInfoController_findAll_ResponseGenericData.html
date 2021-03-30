@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private SurveyInfo[] data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public SurveyInfo[] getData(){
+        return data;
+    }
+
+    public void setData(SurveyInfo[] data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class SurveyInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private int personId; //人员信息表ID
+    private String personName; //人员名称
+    private String personPhone; //联系方式
+    private int groupId; //应急小组表ID
+    private String groupName; //应急小组名称
+    private String talkStartTime; //通话开始时间
+    private String talkTime; //通话时长
+    private int surveyType; //勘察类型：1 拍照， 2 录像， 3 通话
+    private int eventId; //事件编码：事件管理表ID
+    private String eventName; //事件名称
+    private int isDelete; //是否删除：0 未删， 1 已删
+    private int isEventType; //是否事件类型：1 普通， 2 事件
+    private FileResourceInfo[] fileList; //
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getPersonId(){
+        return personId;
+    }
+
+    public void setPersonId(int personId){
+        this.personId = personId;
+    }
+
+    public String getPersonName(){
+        return personName;
+    }
+
+    public void setPersonName(String personName){
+        this.personName = personName;
+    }
+
+    public String getPersonPhone(){
+        return personPhone;
+    }
+
+    public void setPersonPhone(String personPhone){
+        this.personPhone = personPhone;
+    }
+
+    public int getGroupId(){
+        return groupId;
+    }
+
+    public void setGroupId(int groupId){
+        this.groupId = groupId;
+    }
+
+    public String getGroupName(){
+        return groupName;
+    }
+
+    public void setGroupName(String groupName){
+        this.groupName = groupName;
+    }
+
+    public String getTalkStartTime(){
+        return talkStartTime;
+    }
+
+    public void setTalkStartTime(String talkStartTime){
+        this.talkStartTime = talkStartTime;
+    }
+
+    public String getTalkTime(){
+        return talkTime;
+    }
+
+    public void setTalkTime(String talkTime){
+        this.talkTime = talkTime;
+    }
+
+    public int getSurveyType(){
+        return surveyType;
+    }
+
+    public void setSurveyType(int surveyType){
+        this.surveyType = surveyType;
+    }
+
+    public int getEventId(){
+        return eventId;
+    }
+
+    public void setEventId(int eventId){
+        this.eventId = eventId;
+    }
+
+    public String getEventName(){
+        return eventName;
+    }
+
+    public void setEventName(String eventName){
+        this.eventName = eventName;
+    }
+
+    public int getIsDelete(){
+        return isDelete;
+    }
+
+    public void setIsDelete(int isDelete){
+        this.isDelete = isDelete;
+    }
+
+    public int getIsEventType(){
+        return isEventType;
+    }
+
+    public void setIsEventType(int isEventType){
+        this.isEventType = isEventType;
+    }
+
+    public FileResourceInfo[] getFileList(){
+        return fileList;
+    }
+
+    public void setFileList(FileResourceInfo[] fileList){
+        this.fileList = fileList;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class FileResourceInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private String oldFileName; //文件原名称：上传文件的原名称
+    private String newFileName; //文件名称：上传文件后生成的新名称
+    private String fileType; //文件类型：上传文件的后缀名
+    private String fileUrl; //文件公网访问URL地址
+    private String channelTable; //文件的来源业务表
+    private int createMan; //创建人
+    private SurveyInfo surveyInfo; //主表ID
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getOldFileName(){
+        return oldFileName;
+    }
+
+    public void setOldFileName(String oldFileName){
+        this.oldFileName = oldFileName;
+    }
+
+    public String getNewFileName(){
+        return newFileName;
+    }
+
+    public void setNewFileName(String newFileName){
+        this.newFileName = newFileName;
+    }
+
+    public String getFileType(){
+        return fileType;
+    }
+
+    public void setFileType(String fileType){
+        this.fileType = fileType;
+    }
+
+    public String getFileUrl(){
+        return fileUrl;
+    }
+
+    public void setFileUrl(String fileUrl){
+        this.fileUrl = fileUrl;
+    }
+
+    public String getChannelTable(){
+        return channelTable;
+    }
+
+    public void setChannelTable(String channelTable){
+        this.channelTable = channelTable;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+    public SurveyInfo getSurveyInfo(){
+        return surveyInfo;
+    }
+
+    public void setSurveyInfo(SurveyInfo surveyInfo){
+        this.surveyInfo = surveyInfo;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

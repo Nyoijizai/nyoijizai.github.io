@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) PageResult data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface PageResult : NSObject
+
+//当前页(分页工具类Pageable第一页下标为0)
+@property (nonatomic, strong) NSInteger currentPage;
+//页大小
+@property (nonatomic, strong) NSInteger pageSize;
+//总页数
+@property (nonatomic, strong) NSInteger pageTotal;
+//总条数
+@property (nonatomic, strong) long totalNum;
+//返回对象List
+@property (nonatomic, strong) HospitalBedInfo[] content;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface HospitalBedInfo : NSObject
+
+//创建时间
+@property (nonatomic, assign) NSString createTime;
+//主键
+@property (nonatomic, strong) NSInteger id;
+//病床归属区域ID
+@property (nonatomic, strong) NSInteger bedAreaId;
+//病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU
+@property (nonatomic, strong) NSInteger bedType;
+//病历编号
+@property (nonatomic, assign) NSString caseHistoryNo;
+//建卡时间
+@property (nonatomic, assign) NSString createdCardTime;
+//当前病程
+@property (nonatomic, assign) NSString currentCourse;
+//优先级：0 死亡， 1 第一优先， 2 第二优先， 3 第三优先
+@property (nonatomic, strong) NSInteger priority;
+//伤情类别
+@property (nonatomic, assign) NSString injuryCategory;
+//疾病原由
+@property (nonatomic, assign) NSString diseaseReason;
+//是否隔离：0 否， 1 是
+@property (nonatomic, strong) NSInteger isInsulate;
+//病人姓名
+@property (nonatomic, assign) NSString patientName;
+//病人年龄
+@property (nonatomic, assign) NSString patientAge;
+//饮食
+@property (nonatomic, assign) NSString patientDiet;
+//主诉
+@property (nonatomic, assign) NSString patientChiefComplaint;
+//灾前救助
+@property (nonatomic, assign) NSString preDisasterSalvation;
+//特殊保护
+@property (nonatomic, assign) NSString specialProtection;
+//接诊防护措施
+@property (nonatomic, assign) NSString receptionMeasure;
+//体温
+@property (nonatomic, assign) NSString vitalSignTemperature;
+//血氧
+@property (nonatomic, assign) NSString vitalSignBloodOxygen;
+//脉率
+@property (nonatomic, assign) NSString vitalSignPulseRate;
+//呼吸率
+@property (nonatomic, assign) NSString vitalSignRespiratoryRate;
+//血压
+@property (nonatomic, assign) NSString vitalSignBloodPressure;
+//身高
+@property (nonatomic, assign) NSString vitalSignStature;
+//体重
+@property (nonatomic, assign) NSString vitalSignWeight;
+//是否事件类型：1 普通， 2 事件
+@property (nonatomic, strong) NSInteger isEventType;
+//创建人
+@property (nonatomic, strong) NSInteger createMan;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

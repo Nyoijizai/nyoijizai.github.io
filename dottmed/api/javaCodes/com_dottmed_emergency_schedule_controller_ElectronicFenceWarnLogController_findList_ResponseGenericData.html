@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private PageResult data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public PageResult getData(){
+        return data;
+    }
+
+    public void setData(PageResult data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class PageResult implements Serializable{
+
+    private int currentPage; //当前页(分页工具类Pageable第一页下标为0)
+    private int pageSize; //页大小
+    private int pageTotal; //总页数
+    private long totalNum; //总条数
+    private ElectronicFenceWarnLog[] content; //返回对象List
+
+    public int getCurrentPage(){
+        return currentPage;
+    }
+
+    public void setCurrentPage(int currentPage){
+        this.currentPage = currentPage;
+    }
+
+    public int getPageSize(){
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public int getPageTotal(){
+        return pageTotal;
+    }
+
+    public void setPageTotal(int pageTotal){
+        this.pageTotal = pageTotal;
+    }
+
+    public long getTotalNum(){
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum){
+        this.totalNum = totalNum;
+    }
+
+    public ElectronicFenceWarnLog[] getContent(){
+        return content;
+    }
+
+    public void setContent(ElectronicFenceWarnLog[] content){
+        this.content = content;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class ElectronicFenceWarnLog implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private int fenceId; //围栏ID
+    private String fenceName; //围栏名称
+    private int personId; //人员信息表ID
+    private String personName; //人员名称
+    private String personPhone; //联系方式
+    private int groupId; //应急小组表ID
+    private String groupName; //应急小组名称
+    private String terminalDeviceCode; //终端设备号
+    private int warnType; //警告类型：1 未到场， 2 擅离， 3 闯入
+    private int isRead; //是否已读： 0 未读， 1 已读
+    private int isEventType; //是否事件类型：1 普通， 2 事件
+    private int isDelete; //是否删除：0 未删， 1 已删
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getFenceId(){
+        return fenceId;
+    }
+
+    public void setFenceId(int fenceId){
+        this.fenceId = fenceId;
+    }
+
+    public String getFenceName(){
+        return fenceName;
+    }
+
+    public void setFenceName(String fenceName){
+        this.fenceName = fenceName;
+    }
+
+    public int getPersonId(){
+        return personId;
+    }
+
+    public void setPersonId(int personId){
+        this.personId = personId;
+    }
+
+    public String getPersonName(){
+        return personName;
+    }
+
+    public void setPersonName(String personName){
+        this.personName = personName;
+    }
+
+    public String getPersonPhone(){
+        return personPhone;
+    }
+
+    public void setPersonPhone(String personPhone){
+        this.personPhone = personPhone;
+    }
+
+    public int getGroupId(){
+        return groupId;
+    }
+
+    public void setGroupId(int groupId){
+        this.groupId = groupId;
+    }
+
+    public String getGroupName(){
+        return groupName;
+    }
+
+    public void setGroupName(String groupName){
+        this.groupName = groupName;
+    }
+
+    public String getTerminalDeviceCode(){
+        return terminalDeviceCode;
+    }
+
+    public void setTerminalDeviceCode(String terminalDeviceCode){
+        this.terminalDeviceCode = terminalDeviceCode;
+    }
+
+    public int getWarnType(){
+        return warnType;
+    }
+
+    public void setWarnType(int warnType){
+        this.warnType = warnType;
+    }
+
+    public int getIsRead(){
+        return isRead;
+    }
+
+    public void setIsRead(int isRead){
+        this.isRead = isRead;
+    }
+
+    public int getIsEventType(){
+        return isEventType;
+    }
+
+    public void setIsEventType(int isEventType){
+        this.isEventType = isEventType;
+    }
+
+    public int getIsDelete(){
+        return isDelete;
+    }
+
+    public void setIsDelete(int isDelete){
+        this.isDelete = isDelete;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

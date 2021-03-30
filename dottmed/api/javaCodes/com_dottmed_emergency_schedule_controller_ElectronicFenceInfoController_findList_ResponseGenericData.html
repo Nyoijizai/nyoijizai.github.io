@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private PageResult data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public PageResult getData(){
+        return data;
+    }
+
+    public void setData(PageResult data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class PageResult implements Serializable{
+
+    private int currentPage; //当前页(分页工具类Pageable第一页下标为0)
+    private int pageSize; //页大小
+    private int pageTotal; //总页数
+    private long totalNum; //总条数
+    private ElectronicFenceInfo[] content; //返回对象List
+
+    public int getCurrentPage(){
+        return currentPage;
+    }
+
+    public void setCurrentPage(int currentPage){
+        this.currentPage = currentPage;
+    }
+
+    public int getPageSize(){
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public int getPageTotal(){
+        return pageTotal;
+    }
+
+    public void setPageTotal(int pageTotal){
+        this.pageTotal = pageTotal;
+    }
+
+    public long getTotalNum(){
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum){
+        this.totalNum = totalNum;
+    }
+
+    public ElectronicFenceInfo[] getContent(){
+        return content;
+    }
+
+    public void setContent(ElectronicFenceInfo[] content){
+        this.content = content;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class ElectronicFenceInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private String fenceName; //围栏名称
+    private int fenceFeature; //围栏功能：0 禁出， 1 禁入
+    private int fenceStatus; //围栏状态：0 启动， 1 停止
+    private String fenceScope; //围栏坐标范围
+    private int isEventType; //是否事件类型：1 普通， 2 事件
+    private int createMan; //创建人
+    private String createTime; //创建时间
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getFenceName(){
+        return fenceName;
+    }
+
+    public void setFenceName(String fenceName){
+        this.fenceName = fenceName;
+    }
+
+    public int getFenceFeature(){
+        return fenceFeature;
+    }
+
+    public void setFenceFeature(int fenceFeature){
+        this.fenceFeature = fenceFeature;
+    }
+
+    public int getFenceStatus(){
+        return fenceStatus;
+    }
+
+    public void setFenceStatus(int fenceStatus){
+        this.fenceStatus = fenceStatus;
+    }
+
+    public String getFenceScope(){
+        return fenceScope;
+    }
+
+    public void setFenceScope(String fenceScope){
+        this.fenceScope = fenceScope;
+    }
+
+    public int getIsEventType(){
+        return isEventType;
+    }
+
+    public void setIsEventType(int isEventType){
+        this.isEventType = isEventType;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

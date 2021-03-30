@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private SysUser data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public SysUser getData(){
+        return data;
+    }
+
+    public void setData(SysUser data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class SysUser implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private String userName; //用户姓名
+    private String phone; //联系手机
+    private String loginAccount; //登录账号
+    private String loginPassword; //登录密码
+    private String position; //职位名称
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getUserName(){
+        return userName;
+    }
+
+    public void setUserName(String userName){
+        this.userName = userName;
+    }
+
+    public String getPhone(){
+        return phone;
+    }
+
+    public void setPhone(String phone){
+        this.phone = phone;
+    }
+
+    public String getLoginAccount(){
+        return loginAccount;
+    }
+
+    public void setLoginAccount(String loginAccount){
+        this.loginAccount = loginAccount;
+    }
+
+    public String getLoginPassword(){
+        return loginPassword;
+    }
+
+    public void setLoginPassword(String loginPassword){
+        this.loginPassword = loginPassword;
+    }
+
+    public String getPosition(){
+        return position;
+    }
+
+    public void setPosition(String position){
+        this.position = position;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

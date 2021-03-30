@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private PageResult data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public PageResult getData(){
+        return data;
+    }
+
+    public void setData(PageResult data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class PageResult implements Serializable{
+
+    private int currentPage; //当前页(分页工具类Pageable第一页下标为0)
+    private int pageSize; //页大小
+    private int pageTotal; //总页数
+    private long totalNum; //总条数
+    private HospitalBedInfo[] content; //返回对象List
+
+    public int getCurrentPage(){
+        return currentPage;
+    }
+
+    public void setCurrentPage(int currentPage){
+        this.currentPage = currentPage;
+    }
+
+    public int getPageSize(){
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public int getPageTotal(){
+        return pageTotal;
+    }
+
+    public void setPageTotal(int pageTotal){
+        this.pageTotal = pageTotal;
+    }
+
+    public long getTotalNum(){
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum){
+        this.totalNum = totalNum;
+    }
+
+    public HospitalBedInfo[] getContent(){
+        return content;
+    }
+
+    public void setContent(HospitalBedInfo[] content){
+        this.content = content;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class HospitalBedInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private int bedAreaId; //病床归属区域ID
+    private int bedType; //病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU
+    private String caseHistoryNo; //病历编号
+    private String createdCardTime; //建卡时间
+    private String currentCourse; //当前病程
+    private int priority; //优先级：0 死亡， 1 第一优先， 2 第二优先， 3 第三优先
+    private String injuryCategory; //伤情类别
+    private String diseaseReason; //疾病原由
+    private int isInsulate; //是否隔离：0 否， 1 是
+    private String patientName; //病人姓名
+    private String patientAge; //病人年龄
+    private String patientDiet; //饮食
+    private String patientChiefComplaint; //主诉
+    private String preDisasterSalvation; //灾前救助
+    private String specialProtection; //特殊保护
+    private String receptionMeasure; //接诊防护措施
+    private String vitalSignTemperature; //体温
+    private String vitalSignBloodOxygen; //血氧
+    private String vitalSignPulseRate; //脉率
+    private String vitalSignRespiratoryRate; //呼吸率
+    private String vitalSignBloodPressure; //血压
+    private String vitalSignStature; //身高
+    private String vitalSignWeight; //体重
+    private int isEventType; //是否事件类型：1 普通， 2 事件
+    private int createMan; //创建人
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getBedAreaId(){
+        return bedAreaId;
+    }
+
+    public void setBedAreaId(int bedAreaId){
+        this.bedAreaId = bedAreaId;
+    }
+
+    public int getBedType(){
+        return bedType;
+    }
+
+    public void setBedType(int bedType){
+        this.bedType = bedType;
+    }
+
+    public String getCaseHistoryNo(){
+        return caseHistoryNo;
+    }
+
+    public void setCaseHistoryNo(String caseHistoryNo){
+        this.caseHistoryNo = caseHistoryNo;
+    }
+
+    public String getCreatedCardTime(){
+        return createdCardTime;
+    }
+
+    public void setCreatedCardTime(String createdCardTime){
+        this.createdCardTime = createdCardTime;
+    }
+
+    public String getCurrentCourse(){
+        return currentCourse;
+    }
+
+    public void setCurrentCourse(String currentCourse){
+        this.currentCourse = currentCourse;
+    }
+
+    public int getPriority(){
+        return priority;
+    }
+
+    public void setPriority(int priority){
+        this.priority = priority;
+    }
+
+    public String getInjuryCategory(){
+        return injuryCategory;
+    }
+
+    public void setInjuryCategory(String injuryCategory){
+        this.injuryCategory = injuryCategory;
+    }
+
+    public String getDiseaseReason(){
+        return diseaseReason;
+    }
+
+    public void setDiseaseReason(String diseaseReason){
+        this.diseaseReason = diseaseReason;
+    }
+
+    public int getIsInsulate(){
+        return isInsulate;
+    }
+
+    public void setIsInsulate(int isInsulate){
+        this.isInsulate = isInsulate;
+    }
+
+    public String getPatientName(){
+        return patientName;
+    }
+
+    public void setPatientName(String patientName){
+        this.patientName = patientName;
+    }
+
+    public String getPatientAge(){
+        return patientAge;
+    }
+
+    public void setPatientAge(String patientAge){
+        this.patientAge = patientAge;
+    }
+
+    public String getPatientDiet(){
+        return patientDiet;
+    }
+
+    public void setPatientDiet(String patientDiet){
+        this.patientDiet = patientDiet;
+    }
+
+    public String getPatientChiefComplaint(){
+        return patientChiefComplaint;
+    }
+
+    public void setPatientChiefComplaint(String patientChiefComplaint){
+        this.patientChiefComplaint = patientChiefComplaint;
+    }
+
+    public String getPreDisasterSalvation(){
+        return preDisasterSalvation;
+    }
+
+    public void setPreDisasterSalvation(String preDisasterSalvation){
+        this.preDisasterSalvation = preDisasterSalvation;
+    }
+
+    public String getSpecialProtection(){
+        return specialProtection;
+    }
+
+    public void setSpecialProtection(String specialProtection){
+        this.specialProtection = specialProtection;
+    }
+
+    public String getReceptionMeasure(){
+        return receptionMeasure;
+    }
+
+    public void setReceptionMeasure(String receptionMeasure){
+        this.receptionMeasure = receptionMeasure;
+    }
+
+    public String getVitalSignTemperature(){
+        return vitalSignTemperature;
+    }
+
+    public void setVitalSignTemperature(String vitalSignTemperature){
+        this.vitalSignTemperature = vitalSignTemperature;
+    }
+
+    public String getVitalSignBloodOxygen(){
+        return vitalSignBloodOxygen;
+    }
+
+    public void setVitalSignBloodOxygen(String vitalSignBloodOxygen){
+        this.vitalSignBloodOxygen = vitalSignBloodOxygen;
+    }
+
+    public String getVitalSignPulseRate(){
+        return vitalSignPulseRate;
+    }
+
+    public void setVitalSignPulseRate(String vitalSignPulseRate){
+        this.vitalSignPulseRate = vitalSignPulseRate;
+    }
+
+    public String getVitalSignRespiratoryRate(){
+        return vitalSignRespiratoryRate;
+    }
+
+    public void setVitalSignRespiratoryRate(String vitalSignRespiratoryRate){
+        this.vitalSignRespiratoryRate = vitalSignRespiratoryRate;
+    }
+
+    public String getVitalSignBloodPressure(){
+        return vitalSignBloodPressure;
+    }
+
+    public void setVitalSignBloodPressure(String vitalSignBloodPressure){
+        this.vitalSignBloodPressure = vitalSignBloodPressure;
+    }
+
+    public String getVitalSignStature(){
+        return vitalSignStature;
+    }
+
+    public void setVitalSignStature(String vitalSignStature){
+        this.vitalSignStature = vitalSignStature;
+    }
+
+    public String getVitalSignWeight(){
+        return vitalSignWeight;
+    }
+
+    public void setVitalSignWeight(String vitalSignWeight){
+        this.vitalSignWeight = vitalSignWeight;
+    }
+
+    public int getIsEventType(){
+        return isEventType;
+    }
+
+    public void setIsEventType(int isEventType){
+        this.isEventType = isEventType;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

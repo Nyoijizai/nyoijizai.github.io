@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>救援小组</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                dottmedSchedule
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 电子围栏信息
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#add">
+                        新增电子围栏信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#update">
+                        修改电子围栏信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findById">
+                        查找电子围栏信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#deleteById">
+                        删除电子围栏信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#deleteBatch">
+                        批量删除电子围栏信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findAll">
+                        全部电子围栏信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findList">
+                        全部电子围栏信息-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 电子围栏警告日志
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#add">
+                        新增电子围栏警告日志
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#update">
+                        修改电子围栏警告日志
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findById">
+                        查找电子围栏警告日志
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#deleteById">
+                        删除电子围栏警告日志
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#deleteBatch">
+                        批量删除电子围栏警告日志
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findAll">
+                        全部电子围栏警告日志-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findList">
+                        全部电子围栏警告日志-分页-简单条件
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findPageCriteria">
+                        全部电子围栏警告日志-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 事件信息
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#add">
+                        新增事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#update">
+                        修改事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#findById">
+                        查找事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#deleteById">
+                        删除事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#deleteBatch">
+                        批量删除事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#findList">
+                        全部事件信息-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#findAll">
+                        全部事件信息-无分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 病床区域
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#add">
+                        新增病床区域
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#update">
+                        修改病床区域
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findById">
+                        查找病床区域
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#deleteById">
+                        删除病床区域
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#deleteBatch">
+                        批量删除病床区域
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findAll">
+                        全部病床区域-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findList">
+                        全部病床区域-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> 病床信息
+            </div>
+            <div id="collapse4" class="collapse " aria-labelledby="heading4">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#add">
+                        新增病床信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#update">
+                        修改病床信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findById">
+                        查找病床信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#deleteById">
+                        删除病床信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#deleteBatch">
+                        批量删除病床信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findAll">
+                        全部病床信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findList">
+                        全部病床信息-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> 人员信息
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add">
+                        新增人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update">
+                        修改人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById">
+                        查找人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById">
+                        删除人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteBatch">
+                        批量删除人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findAll">
+                        全部人员信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findList">
+                        全部人员信息-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> 人员地理位置历史记录
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#add">
+                        新增人员地理位置历史记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#update">
+                        修改人员地理位置历史记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findById">
+                        查找人员地理位置历史记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#deleteById">
+                        删除人员地理位置历史记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#deleteBatch">
+                        批量删除人员地理位置历史记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findAll">
+                        全部人员地理位置历史记录-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findList">
+                        全部人员地理位置历史记录-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findPageCriteria">
+                        全部人员地理位置历史记录-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading7" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse7" aria-controls="collapse7">
+                <i class="glyphicon glyphicon-align-justify"></i> 救援小组
+            </div>
+            <div id="collapse7" class="collapse in " aria-labelledby="heading7">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#add">
+                        新增救援小组
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#update">
+                        修改救援小组
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#findById">
+                        查找救援小组
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#deleteById">
+                        删除救援小组
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#deleteBatch">
+                        批量删除救援小组
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#findAll">
+                        全部救援小组-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_RescueGroupController.html#findList">
+                        全部救援小组-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading8" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse8" aria-controls="collapse8">
+                <i class="glyphicon glyphicon-align-justify"></i> 勘察信息记录
+            </div>
+            <div id="collapse8" class="collapse " aria-labelledby="heading8">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#add">
+                        新增勘察信息记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#update">
+                        修改勘察信息记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findById">
+                        查找勘察信息记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#deleteById">
+                        删除勘察信息记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#deleteBatch">
+                        批量删除勘察信息记录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findAll">
+                        全部勘察信息记录-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findPage">
+                        全部勘察信息记录-分页-简单条件
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findPageCriteria">
+                        全部勘察信息记录-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading9" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse9" aria-controls="collapse9">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户管理
+            </div>
+            <div id="collapse9" class="collapse " aria-labelledby="heading9">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#loginUser">
+                        用户登录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#loginOut">
+                        退出登录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#addUser">
+                        新增用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#updateUser">
+                        修改用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#findUser">
+                        查找用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#deleteById">
+                        删除用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#deleteBatch">
+                        批量删除用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#getLoginInfo">
+                        获取当前登录用户信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#findAll">
+                        全部用户信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_SysUserController.html#findList">
+                        全部用户信息-分页
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="add"><a href="#">新增救援小组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/add</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"id":"int //主键",
+	"groupName":"string //小组名称",
+	"eventCode":"string //事件编码：事件管理表主键",
+	"eventName":"string //事件名称",
+	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_add_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_add_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="update"><a href="#">修改救援小组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/update</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"id":"int //主键",
+	"groupName":"string //小组名称",
+	"eventCode":"string //事件编码：事件管理表主键",
+	"eventName":"string //事件名称",
+	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_update_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_update_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findById"><a href="#">查找救援小组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/find</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"createTime":"date //创建时间",
+		"id":"int //主键",
+		"groupName":"string //小组名称",
+		"eventCode":"string //事件编码：事件管理表主键",
+		"eventName":"string //事件名称",
+		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"createMan":"int //创建人(登录用户表ID)"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findById_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findById_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="deleteById"><a href="#">删除救援小组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/delete</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_deleteById_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_deleteById_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="deleteBatch"><a href="#">批量删除救援小组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/deleteBatch</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">[{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"id":"int //主键",
+	"groupName":"string //小组名称",
+	"eventCode":"string //事件编码：事件管理表主键",
+	"eventName":"string //事件名称",
+	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}]</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_deleteBatch_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_deleteBatch_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findAll"><a href="#">全部救援小组-无分页 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/all</code>
+        <span class="label label-default">GET</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":[{
+		"createTime":"date //创建时间",
+		"id":"int //主键",
+		"groupName":"string //小组名称",
+		"eventCode":"string //事件编码：事件管理表主键",
+		"eventName":"string //事件名称",
+		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"createMan":"int //创建人(登录用户表ID)"
+	}]
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findAll_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findAll_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findList"><a href="#">全部救援小组-分页 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/rescue/group/list</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>groupName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>小组名称</td>
+                    </tr>
+                    <tr>
+                        <td>eventCode</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>事件编码：事件管理表主键</td>
+                    </tr>
+                    <tr>
+                        <td>eventName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>事件名称</td>
+                    </tr>
+                    <tr>
+                        <td>isEventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否事件类型：1 普通， 2 事件</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人(登录用户表ID)</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+		"pageSize":"int //页大小",
+		"pageTotal":"int //总页数",
+		"totalNum":"long //总条数",
+		"content":[{
+			"createTime":"date //创建时间",
+			"id":"int //主键",
+			"groupName":"string //小组名称",
+			"eventCode":"string //事件编码：事件管理表主键",
+			"eventName":"string //事件名称",
+			"isEventType":"int //是否事件类型：1 普通， 2 事件",
+			"createMan":"int //创建人(登录用户表ID)"
+		}]
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findList_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_findList_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '电子围栏信息.新增电子围栏信息', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#add'},
+            {name: '电子围栏信息.修改电子围栏信息', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#update'},
+            {name: '电子围栏信息.查找电子围栏信息', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findById'},
+            {name: '电子围栏信息.删除电子围栏信息', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#deleteById'},
+            {name: '电子围栏信息.批量删除电子围栏信息', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#deleteBatch'},
+            {name: '电子围栏信息.全部电子围栏信息-无分页', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findAll'},
+            {name: '电子围栏信息.全部电子围栏信息-分页', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceInfoController.html#findList'},
+            {name: '电子围栏警告日志.新增电子围栏警告日志', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#add'},
+            {name: '电子围栏警告日志.修改电子围栏警告日志', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#update'},
+            {name: '电子围栏警告日志.查找电子围栏警告日志', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findById'},
+            {name: '电子围栏警告日志.删除电子围栏警告日志', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#deleteById'},
+            {name: '电子围栏警告日志.批量删除电子围栏警告日志', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#deleteBatch'},
+            {name: '电子围栏警告日志.全部电子围栏警告日志-无分页', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findAll'},
+            {name: '电子围栏警告日志.全部电子围栏警告日志-分页-简单条件', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findList'},
+            {name: '电子围栏警告日志.全部电子围栏警告日志-分页-复杂条件', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findPageCriteria'},
+            {name: '事件信息.新增事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#add'},
+            {name: '事件信息.修改事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#update'},
+            {name: '事件信息.查找事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#findById'},
+            {name: '事件信息.删除事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#deleteById'},
+            {name: '事件信息.批量删除事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#deleteBatch'},
+            {name: '事件信息.全部事件信息-分页', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#findList'},
+            {name: '事件信息.全部事件信息-无分页', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#findAll'},
+            {name: '病床区域.新增病床区域', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#add'},
+            {name: '病床区域.修改病床区域', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#update'},
+            {name: '病床区域.查找病床区域', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findById'},
+            {name: '病床区域.删除病床区域', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#deleteById'},
+            {name: '病床区域.批量删除病床区域', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#deleteBatch'},
+            {name: '病床区域.全部病床区域-无分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findAll'},
+            {name: '病床区域.全部病床区域-分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedAreaController.html#findList'},
+            {name: '病床信息.新增病床信息', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#add'},
+            {name: '病床信息.修改病床信息', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#update'},
+            {name: '病床信息.查找病床信息', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findById'},
+            {name: '病床信息.删除病床信息', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#deleteById'},
+            {name: '病床信息.批量删除病床信息', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#deleteBatch'},
+            {name: '病床信息.全部病床信息-无分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findAll'},
+            {name: '病床信息.全部病床信息-分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findList'},
+            {name: '人员信息.新增人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add'},
+            {name: '人员信息.修改人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update'},
+            {name: '人员信息.查找人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById'},
+            {name: '人员信息.删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById'},
+            {name: '人员信息.批量删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteBatch'},
+            {name: '人员信息.全部人员信息-无分页', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findAll'},
+            {name: '人员信息.全部人员信息-分页', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findList'},
+            {name: '人员地理位置历史记录.新增人员地理位置历史记录', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#add'},
+            {name: '人员地理位置历史记录.修改人员地理位置历史记录', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#update'},
+            {name: '人员地理位置历史记录.查找人员地理位置历史记录', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findById'},
+            {name: '人员地理位置历史记录.删除人员地理位置历史记录', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#deleteById'},
+            {name: '人员地理位置历史记录.批量删除人员地理位置历史记录', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#deleteBatch'},
+            {name: '人员地理位置历史记录.全部人员地理位置历史记录-无分页', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findAll'},
+            {name: '人员地理位置历史记录.全部人员地理位置历史记录-分页', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findList'},
+            {name: '人员地理位置历史记录.全部人员地理位置历史记录-分页-复杂条件', url: 'com_dottmed_emergency_schedule_controller_PersonnelLbsHistoryController.html#findPageCriteria'},
+            {name: '救援小组.新增救援小组', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#add'},
+            {name: '救援小组.修改救援小组', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#update'},
+            {name: '救援小组.查找救援小组', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#findById'},
+            {name: '救援小组.删除救援小组', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#deleteById'},
+            {name: '救援小组.批量删除救援小组', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#deleteBatch'},
+            {name: '救援小组.全部救援小组-无分页', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#findAll'},
+            {name: '救援小组.全部救援小组-分页', url: 'com_dottmed_emergency_schedule_controller_RescueGroupController.html#findList'},
+            {name: '勘察信息记录.新增勘察信息记录', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#add'},
+            {name: '勘察信息记录.修改勘察信息记录', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#update'},
+            {name: '勘察信息记录.查找勘察信息记录', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findById'},
+            {name: '勘察信息记录.删除勘察信息记录', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#deleteById'},
+            {name: '勘察信息记录.批量删除勘察信息记录', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#deleteBatch'},
+            {name: '勘察信息记录.全部勘察信息记录-无分页', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findAll'},
+            {name: '勘察信息记录.全部勘察信息记录-分页-简单条件', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findPage'},
+            {name: '勘察信息记录.全部勘察信息记录-分页-复杂条件', url: 'com_dottmed_emergency_schedule_controller_SurveyInfoController.html#findPageCriteria'},
+            {name: '用户管理.用户登录', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#loginUser'},
+            {name: '用户管理.退出登录', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#loginOut'},
+            {name: '用户管理.新增用户', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#addUser'},
+            {name: '用户管理.修改用户', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#updateUser'},
+            {name: '用户管理.查找用户', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#findUser'},
+            {name: '用户管理.删除用户', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#deleteById'},
+            {name: '用户管理.批量删除用户', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#deleteBatch'},
+            {name: '用户管理.获取当前登录用户信息', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#getLoginInfo'},
+            {name: '用户管理.全部用户信息-无分页', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#findAll'},
+            {name: '用户管理.全部用户信息-分页', url: 'com_dottmed_emergency_schedule_controller_SysUserController.html#findList'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

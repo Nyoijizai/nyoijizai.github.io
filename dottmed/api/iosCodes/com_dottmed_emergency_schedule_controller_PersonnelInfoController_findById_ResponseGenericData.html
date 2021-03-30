@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) PersonnelInfo data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface PersonnelInfo : NSObject
+
+//创建时间
+@property (nonatomic, assign) NSString createTime;
+//主键
+@property (nonatomic, strong) NSInteger id;
+//人员姓名
+@property (nonatomic, assign) NSString personName;
+//联系电话
+@property (nonatomic, assign) NSString personPhone;
+//归属小组(救援小组表ID)
+@property (nonatomic, strong) NSInteger groupId;
+//事件编码：事件管理表主键
+@property (nonatomic, assign) NSString eventCode;
+//事件名称
+@property (nonatomic, assign) NSString eventName;
+//是否事件类型：1 普通， 2 事件
+@property (nonatomic, strong) NSInteger isEventType;
+//创建人(登录用户表ID)
+@property (nonatomic, strong) NSInteger createMan;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
