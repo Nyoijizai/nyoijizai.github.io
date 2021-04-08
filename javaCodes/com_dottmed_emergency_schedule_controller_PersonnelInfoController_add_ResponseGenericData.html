@@ -12,7 +12,7 @@ public class ResponseGenericData implements Serializable{
 
     private int code; //返回码
     private String message; //返回消息
-    private Object data; //返回数据
+    private PersonnelInfo data; //返回数据
 
     public int getCode(){
         return code;
@@ -30,17 +30,141 @@ public class ResponseGenericData implements Serializable{
         this.message = message;
     }
 
-    public Object getData(){
+    public PersonnelInfo getData(){
         return data;
     }
 
-    public void setData(Object data){
+    public void setData(PersonnelInfo data){
         this.data = data;
     }
 
 }
 </pre>
 
+
+<pre class="prettyprint lang-java">
+public class PersonnelInfo implements Serializable{
+
+    private String createTime; //创建时间
+    private int id; //主键
+    private String personName; //人员姓名
+    private String personPhone; //联系电话
+    private String personPwd; //app登录密码
+    private String eventId; //事件编码：事件管理表主键
+    private String eventName; //事件名称
+    private int isEventType; //是否事件类型：1 普通， 2 事件
+    private int status; //终端实时状态：0 离线，1 在线
+    private String lastLongitude; //最后一次定位经度
+    private String lastLatitude; //最后一次定位纬度
+    private String lastLbsTime; //最后一次定位时间
+    private int createMan; //创建人(登录用户表ID)
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getPersonName(){
+        return personName;
+    }
+
+    public void setPersonName(String personName){
+        this.personName = personName;
+    }
+
+    public String getPersonPhone(){
+        return personPhone;
+    }
+
+    public void setPersonPhone(String personPhone){
+        this.personPhone = personPhone;
+    }
+
+    public String getPersonPwd(){
+        return personPwd;
+    }
+
+    public void setPersonPwd(String personPwd){
+        this.personPwd = personPwd;
+    }
+
+    public String getEventId(){
+        return eventId;
+    }
+
+    public void setEventId(String eventId){
+        this.eventId = eventId;
+    }
+
+    public String getEventName(){
+        return eventName;
+    }
+
+    public void setEventName(String eventName){
+        this.eventName = eventName;
+    }
+
+    public int getIsEventType(){
+        return isEventType;
+    }
+
+    public void setIsEventType(int isEventType){
+        this.isEventType = isEventType;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public String getLastLongitude(){
+        return lastLongitude;
+    }
+
+    public void setLastLongitude(String lastLongitude){
+        this.lastLongitude = lastLongitude;
+    }
+
+    public String getLastLatitude(){
+        return lastLatitude;
+    }
+
+    public void setLastLatitude(String lastLatitude){
+        this.lastLatitude = lastLatitude;
+    }
+
+    public String getLastLbsTime(){
+        return lastLbsTime;
+    }
+
+    public void setLastLbsTime(String lastLbsTime){
+        this.lastLbsTime = lastLbsTime;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+}
+</pre>
 
 
 

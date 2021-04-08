@@ -39,14 +39,22 @@
 @property (nonatomic, assign) NSString personName;
 //联系电话
 @property (nonatomic, assign) NSString personPhone;
-//归属小组(救援小组表ID)
-@property (nonatomic, strong) NSInteger groupId;
+//app登录密码
+@property (nonatomic, assign) NSString personPwd;
 //事件编码：事件管理表主键
-@property (nonatomic, assign) NSString eventCode;
+@property (nonatomic, assign) NSString eventId;
 //事件名称
 @property (nonatomic, assign) NSString eventName;
 //是否事件类型：1 普通， 2 事件
 @property (nonatomic, strong) NSInteger isEventType;
+//终端实时状态：0 离线，1 在线
+@property (nonatomic, strong) NSInteger status;
+//最后一次定位经度
+@property (nonatomic, assign) NSString lastLongitude;
+//最后一次定位纬度
+@property (nonatomic, assign) NSString lastLatitude;
+//最后一次定位时间
+@property (nonatomic, assign) NSString lastLbsTime;
 //创建人(登录用户表ID)
 @property (nonatomic, strong) NSInteger createMan;
 

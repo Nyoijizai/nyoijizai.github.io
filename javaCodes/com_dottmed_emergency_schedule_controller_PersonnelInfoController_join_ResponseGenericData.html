@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private GroupPersonJoin data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public GroupPersonJoin getData(){
+        return data;
+    }
+
+    public void setData(GroupPersonJoin data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class GroupPersonJoin implements Serializable{
+
+    private int groupId; //
+    private int personId; //人员信息表ID
+
+    public int getGroupId(){
+        return groupId;
+    }
+
+    public void setGroupId(int groupId){
+        this.groupId = groupId;
+    }
+
+    public int getPersonId(){
+        return personId;
+    }
+
+    public void setPersonId(int personId){
+        this.personId = personId;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

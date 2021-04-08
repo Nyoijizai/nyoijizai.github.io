@@ -193,6 +193,9 @@
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add">
                         新增人员信息
                     </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#join">
+                        将成员关联到群组
+                    </a>
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update">
                         修改人员信息
                     </a>
@@ -376,23 +379,72 @@
 	"id":"int //主键",
 	"personName":"string //人员姓名",
 	"personPhone":"string //联系电话",
-	"groupId":"int //归属小组(救援小组表ID)",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"personPwd":"string //app登录密码",
+	"eventId":"string //事件编码：事件管理表主键",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
-	"createMan":"int //创建人(登录用户表ID)",
+	"status":"int //终端实时状态：0 离线，1 在线",
+	"lastLongitude":"string //最后一次定位经度",
+	"lastLatitude":"string //最后一次定位纬度",
+	"lastLbsTime":"date //最后一次定位时间",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }</pre>
     <p><strong>返回结果</strong></p>
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
 	"message":"string //返回消息",
-	"data":{}
+	"data":{
+		"createTime":"date //创建时间",
+		"id":"int //主键",
+		"personName":"string //人员姓名",
+		"personPhone":"string //联系电话",
+		"personPwd":"string //app登录密码",
+		"eventId":"string //事件编码：事件管理表主键",
+		"eventName":"string //事件名称",
+		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"status":"int //终端实时状态：0 离线，1 在线",
+		"lastLongitude":"string //最后一次定位经度",
+		"lastLatitude":"string //最后一次定位纬度",
+		"lastLbsTime":"date //最后一次定位时间",
+		"createMan":"int //创建人(登录用户表ID)"
+	}
 }</pre>
         <div class="form-group">
             <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_PersonnelInfoController_add_ResponseGenericData.html"><i
                         class="fa fa-android" aria-hidden="true"></i> Android Model</a>
             <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_PersonnelInfoController_add_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="join"><a href="#">将成员关联到群组 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/personnel/info/join</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"groupId":"int",
+	"personId":"int //人员信息表ID"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"groupId":"int",
+		"personId":"int //人员信息表ID"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_PersonnelInfoController_join_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_schedule_controller_PersonnelInfoController_join_ResponseGenericData.html"><i class="fa fa-apple"
                                                                                                  aria-hidden="true"></i>
                 iOS Model</a>
         </div>
@@ -418,11 +470,15 @@
 	"id":"int //主键",
 	"personName":"string //人员姓名",
 	"personPhone":"string //联系电话",
-	"groupId":"int //归属小组(救援小组表ID)",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"personPwd":"string //app登录密码",
+	"eventId":"string //事件编码：事件管理表主键",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
-	"createMan":"int //创建人(登录用户表ID)",
+	"status":"int //终端实时状态：0 离线，1 在线",
+	"lastLongitude":"string //最后一次定位经度",
+	"lastLatitude":"string //最后一次定位纬度",
+	"lastLbsTime":"date //最后一次定位时间",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }</pre>
     <p><strong>返回结果</strong></p>
@@ -472,10 +528,14 @@
 		"id":"int //主键",
 		"personName":"string //人员姓名",
 		"personPhone":"string //联系电话",
-		"groupId":"int //归属小组(救援小组表ID)",
-		"eventCode":"string //事件编码：事件管理表主键",
+		"personPwd":"string //app登录密码",
+		"eventId":"string //事件编码：事件管理表主键",
 		"eventName":"string //事件名称",
 		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"status":"int //终端实时状态：0 离线，1 在线",
+		"lastLongitude":"string //最后一次定位经度",
+		"lastLatitude":"string //最后一次定位纬度",
+		"lastLbsTime":"date //最后一次定位时间",
 		"createMan":"int //创建人(登录用户表ID)"
 	}
 }</pre>
@@ -547,11 +607,15 @@
 	"id":"int //主键",
 	"personName":"string //人员姓名",
 	"personPhone":"string //联系电话",
-	"groupId":"int //归属小组(救援小组表ID)",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"personPwd":"string //app登录密码",
+	"eventId":"string //事件编码：事件管理表主键",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
-	"createMan":"int //创建人(登录用户表ID)",
+	"status":"int //终端实时状态：0 离线，1 在线",
+	"lastLongitude":"string //最后一次定位经度",
+	"lastLatitude":"string //最后一次定位纬度",
+	"lastLbsTime":"date //最后一次定位时间",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }]</pre>
     <p><strong>返回结果</strong></p>
@@ -586,10 +650,14 @@
 		"id":"int //主键",
 		"personName":"string //人员姓名",
 		"personPhone":"string //联系电话",
-		"groupId":"int //归属小组(救援小组表ID)",
-		"eventCode":"string //事件编码：事件管理表主键",
+		"personPwd":"string //app登录密码",
+		"eventId":"string //事件编码：事件管理表主键",
 		"eventName":"string //事件名称",
 		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"status":"int //终端实时状态：0 离线，1 在线",
+		"lastLongitude":"string //最后一次定位经度",
+		"lastLatitude":"string //最后一次定位纬度",
+		"lastLbsTime":"date //最后一次定位时间",
 		"createMan":"int //创建人(登录用户表ID)"
 	}]
 }</pre>
@@ -667,13 +735,13 @@
                         <td>联系电话</td>
                     </tr>
                     <tr>
-                        <td>groupId</td>
-                        <td>int</td>
+                        <td>personPwd</td>
+                        <td>string</td>
                         <td>否</td>
-                        <td>归属小组(救援小组表ID)</td>
+                        <td>app登录密码</td>
                     </tr>
                     <tr>
-                        <td>eventCode</td>
+                        <td>eventId</td>
                         <td>string</td>
                         <td>否</td>
                         <td>事件编码：事件管理表主键</td>
@@ -691,10 +759,34 @@
                         <td>是否事件类型：1 普通， 2 事件</td>
                     </tr>
                     <tr>
+                        <td>status</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>终端实时状态：0 离线，1 在线</td>
+                    </tr>
+                    <tr>
+                        <td>lastLongitude</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>最后一次定位经度</td>
+                    </tr>
+                    <tr>
+                        <td>lastLatitude</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>最后一次定位纬度</td>
+                    </tr>
+                    <tr>
+                        <td>lastLbsTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>最后一次定位时间</td>
+                    </tr>
+                    <tr>
                         <td>createMan</td>
                         <td>int</td>
                         <td>否</td>
-                        <td>创建人(登录用户表ID)</td>
+                        <td>创建人</td>
                     </tr>
                     <tr>
                         <td>createTime</td>
@@ -717,10 +809,14 @@
 			"id":"int //主键",
 			"personName":"string //人员姓名",
 			"personPhone":"string //联系电话",
-			"groupId":"int //归属小组(救援小组表ID)",
-			"eventCode":"string //事件编码：事件管理表主键",
+			"personPwd":"string //app登录密码",
+			"eventId":"string //事件编码：事件管理表主键",
 			"eventName":"string //事件名称",
 			"isEventType":"int //是否事件类型：1 普通， 2 事件",
+			"status":"int //终端实时状态：0 离线，1 在线",
+			"lastLongitude":"string //最后一次定位经度",
+			"lastLatitude":"string //最后一次定位纬度",
+			"lastLbsTime":"date //最后一次定位时间",
 			"createMan":"int //创建人(登录用户表ID)"
 		}]
 	}
@@ -784,6 +880,7 @@
             {name: '病床信息.全部病床信息-无分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findAll'},
             {name: '病床信息.全部病床信息-分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findList'},
             {name: '人员信息.新增人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add'},
+            {name: '人员信息.将成员关联到群组', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#join'},
             {name: '人员信息.修改人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update'},
             {name: '人员信息.查找人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById'},
             {name: '人员信息.删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById'},

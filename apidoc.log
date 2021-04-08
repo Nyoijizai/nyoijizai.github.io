@@ -1,278 +1,274 @@
-三月 29, 2021 4:39:37 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:11 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find java src paths:  [D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\]
-三月 29, 2021 4:39:37 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:11 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: project type not set, try to figure out...
-三月 29, 2021 4:39:37 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:11 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start find controllers in path : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : ElectronicFenceInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : ElectronicFenceWarnLogController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : EventInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : HospitalBedAreaController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : HospitalBedInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : PersonnelInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : PersonnelLbsHistoryController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : RescueGroupController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : SurveyInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : SysUserController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : ElectronicFenceInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : ElectronicFenceInfoController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:12 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : ElectronicFenceWarnLogController.java
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:38 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : ElectronicFenceWarnLogController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : EventInfoController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : EventInfoController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : HospitalBedAreaController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : HospitalBedAreaController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : HospitalBedInfoController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : HospitalBedInfoController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:13 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : PersonnelInfoController.java
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:39 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
-信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
-警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : PersonnelInfoController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : PersonnelLbsHistoryController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : PersonnelLbsHistoryController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : RescueGroupController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : RescueGroupController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : SurveyInfoController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : SurveyInfoController.java
-三月 29, 2021 4:39:40 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : SysUserController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: we think T should not be an enum type
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils warn
+四月 08, 2021 3:27:14 下午 io.github.yedaxia.apidocs.LogUtils warn
 警告: warning!! Cannot find java file , in java file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\common\util\ResponseGenericData.java, className : T, we cannot found more information of it, you've better to make it a JavaBean
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : SysUserController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate api docs start...
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\ElectronicFenceInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\ElectronicFenceInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\ElectronicFenceWarnLogController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\ElectronicFenceWarnLogController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\EventInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\EventInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\HospitalBedAreaController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\HospitalBedAreaController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\HospitalBedInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\HospitalBedInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\PersonnelInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\PersonnelInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\PersonnelLbsHistoryController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\PersonnelLbsHistoryController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\RescueGroupController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\RescueGroupController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\SurveyInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\SurveyInfoController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\SysUserController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-schedule\src\main\java\com\dottmed\emergency\schedule\controller\SysUserController.java
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate index start !!!
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate index done !!!
-三月 29, 2021 4:39:41 下午 io.github.yedaxia.apidocs.LogUtils info
+四月 08, 2021 3:27:15 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate api docs done !!!

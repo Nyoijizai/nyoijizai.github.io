@@ -193,6 +193,9 @@
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add">
                         新增人员信息
                     </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#join">
+                        将成员关联到群组
+                    </a>
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update">
                         修改人员信息
                     </a>
@@ -375,9 +378,12 @@
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
 	"groupName":"string //小组名称",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"groupType":"int //小组类型：1 永久， 2 临时",
+	"groupStatus":"int //小组状态：0 禁用，1 启用",
+	"eventId":"int //事件编码：事件管理表主键ID",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"isDelete":"int //是否删除：0 未删， 1 已删",
 	"createMan":"int //创建人(登录用户表ID)",
 	"createTime":"date //创建时间"
 }</pre>
@@ -415,9 +421,12 @@
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
 	"groupName":"string //小组名称",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"groupType":"int //小组类型：1 永久， 2 临时",
+	"groupStatus":"int //小组状态：0 禁用，1 启用",
+	"eventId":"int //事件编码：事件管理表主键ID",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"isDelete":"int //是否删除：0 未删， 1 已删",
 	"createMan":"int //创建人(登录用户表ID)",
 	"createTime":"date //创建时间"
 }</pre>
@@ -467,9 +476,12 @@
 		"createTime":"date //创建时间",
 		"id":"int //主键",
 		"groupName":"string //小组名称",
-		"eventCode":"string //事件编码：事件管理表主键",
+		"groupType":"int //小组类型：1 永久， 2 临时",
+		"groupStatus":"int //小组状态：0 禁用，1 启用",
+		"eventId":"int //事件编码：事件管理表主键ID",
 		"eventName":"string //事件名称",
 		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"isDelete":"int //是否删除：0 未删， 1 已删",
 		"createMan":"int //创建人(登录用户表ID)"
 	}
 }</pre>
@@ -540,9 +552,12 @@
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
 	"groupName":"string //小组名称",
-	"eventCode":"string //事件编码：事件管理表主键",
+	"groupType":"int //小组类型：1 永久， 2 临时",
+	"groupStatus":"int //小组状态：0 禁用，1 启用",
+	"eventId":"int //事件编码：事件管理表主键ID",
 	"eventName":"string //事件名称",
 	"isEventType":"int //是否事件类型：1 普通， 2 事件",
+	"isDelete":"int //是否删除：0 未删， 1 已删",
 	"createMan":"int //创建人(登录用户表ID)",
 	"createTime":"date //创建时间"
 }]</pre>
@@ -577,9 +592,12 @@
 		"createTime":"date //创建时间",
 		"id":"int //主键",
 		"groupName":"string //小组名称",
-		"eventCode":"string //事件编码：事件管理表主键",
+		"groupType":"int //小组类型：1 永久， 2 临时",
+		"groupStatus":"int //小组状态：0 禁用，1 启用",
+		"eventId":"int //事件编码：事件管理表主键ID",
 		"eventName":"string //事件名称",
 		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"isDelete":"int //是否删除：0 未删， 1 已删",
 		"createMan":"int //创建人(登录用户表ID)"
 	}]
 }</pre>
@@ -651,10 +669,22 @@
                         <td>小组名称</td>
                     </tr>
                     <tr>
-                        <td>eventCode</td>
-                        <td>string</td>
+                        <td>groupType</td>
+                        <td>int</td>
                         <td>否</td>
-                        <td>事件编码：事件管理表主键</td>
+                        <td>小组类型：1 永久， 2 临时</td>
+                    </tr>
+                    <tr>
+                        <td>groupStatus</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>小组状态：0 禁用，1 启用</td>
+                    </tr>
+                    <tr>
+                        <td>eventId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件编码：事件管理表主键ID</td>
                     </tr>
                     <tr>
                         <td>eventName</td>
@@ -667,6 +697,12 @@
                         <td>int</td>
                         <td>否</td>
                         <td>是否事件类型：1 普通， 2 事件</td>
+                    </tr>
+                    <tr>
+                        <td>isDelete</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否删除：0 未删， 1 已删</td>
                     </tr>
                     <tr>
                         <td>createMan</td>
@@ -694,9 +730,12 @@
 			"createTime":"date //创建时间",
 			"id":"int //主键",
 			"groupName":"string //小组名称",
-			"eventCode":"string //事件编码：事件管理表主键",
+			"groupType":"int //小组类型：1 永久， 2 临时",
+			"groupStatus":"int //小组状态：0 禁用，1 启用",
+			"eventId":"int //事件编码：事件管理表主键ID",
 			"eventName":"string //事件名称",
 			"isEventType":"int //是否事件类型：1 普通， 2 事件",
+			"isDelete":"int //是否删除：0 未删， 1 已删",
 			"createMan":"int //创建人(登录用户表ID)"
 		}]
 	}
@@ -760,6 +799,7 @@
             {name: '病床信息.全部病床信息-无分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findAll'},
             {name: '病床信息.全部病床信息-分页', url: 'com_dottmed_emergency_schedule_controller_HospitalBedInfoController.html#findList'},
             {name: '人员信息.新增人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#add'},
+            {name: '人员信息.将成员关联到群组', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#join'},
             {name: '人员信息.修改人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update'},
             {name: '人员信息.查找人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById'},
             {name: '人员信息.删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById'},

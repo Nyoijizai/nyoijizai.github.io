@@ -48,9 +48,12 @@ public class RescueGroup implements Serializable{
     private String createTime; //创建时间
     private int id; //主键
     private String groupName; //小组名称
-    private String eventCode; //事件编码：事件管理表主键
+    private int groupType; //小组类型：1 永久， 2 临时
+    private int groupStatus; //小组状态：0 禁用，1 启用
+    private int eventId; //事件编码：事件管理表主键ID
     private String eventName; //事件名称
     private int isEventType; //是否事件类型：1 普通， 2 事件
+    private int isDelete; //是否删除：0 未删， 1 已删
     private int createMan; //创建人(登录用户表ID)
 
     public String getCreateTime(){
@@ -77,12 +80,28 @@ public class RescueGroup implements Serializable{
         this.groupName = groupName;
     }
 
-    public String getEventCode(){
-        return eventCode;
+    public int getGroupType(){
+        return groupType;
     }
 
-    public void setEventCode(String eventCode){
-        this.eventCode = eventCode;
+    public void setGroupType(int groupType){
+        this.groupType = groupType;
+    }
+
+    public int getGroupStatus(){
+        return groupStatus;
+    }
+
+    public void setGroupStatus(int groupStatus){
+        this.groupStatus = groupStatus;
+    }
+
+    public int getEventId(){
+        return eventId;
+    }
+
+    public void setEventId(int eventId){
+        this.eventId = eventId;
     }
 
     public String getEventName(){
@@ -99,6 +118,14 @@ public class RescueGroup implements Serializable{
 
     public void setIsEventType(int isEventType){
         this.isEventType = isEventType;
+    }
+
+    public int getIsDelete(){
+        return isDelete;
+    }
+
+    public void setIsDelete(int isDelete){
+        this.isDelete = isDelete;
     }
 
     public int getCreateMan(){
