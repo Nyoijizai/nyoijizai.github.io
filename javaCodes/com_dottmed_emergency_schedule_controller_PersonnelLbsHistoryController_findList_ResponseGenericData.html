@@ -102,6 +102,7 @@ public class PersonnelLbsHistory implements Serializable{
     private int id; //主键
     private int personId; //人员信息表ID
     private String personName; //人员姓名
+    private String personPhone; //联系电话
     private String terminalNo; //终端号
     private String longitude; //经度
     private String latitude; //纬度
@@ -138,6 +139,14 @@ public class PersonnelLbsHistory implements Serializable{
 
     public void setPersonName(String personName){
         this.personName = personName;
+    }
+
+    public String getPersonPhone(){
+        return personPhone;
+    }
+
+    public void setPersonPhone(String personPhone){
+        this.personPhone = personPhone;
     }
 
     public String getTerminalNo(){

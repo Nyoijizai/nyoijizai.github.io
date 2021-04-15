@@ -103,6 +103,12 @@
                 <i class="glyphicon glyphicon-align-justify"></i> 事件信息
             </div>
             <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#open">
+                        启动当前将要处理的事件
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#close">
+                        关闭当前将要处理的事件
+                    </a>
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_EventInfoController.html#add">
                         新增事件信息
                     </a>
@@ -201,6 +207,9 @@
                     </a>
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById">
                         查找人员信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findAllByGroupId">
+                        根据小组ID查找人员信息列表
                     </a>
                     <a class="catalog-item" href="com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById">
                         删除人员信息
@@ -377,7 +386,7 @@
 	}],
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
-	"groupName":"string //小组名称",
+	"groupName":"string //小组名称【必须】",
 	"groupType":"int //小组类型：1 永久， 2 临时",
 	"groupStatus":"int //小组状态：0 禁用，1 启用",
 	"eventId":"int //事件编码：事件管理表主键ID",
@@ -391,7 +400,18 @@
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
 	"message":"string //返回消息",
-	"data":{}
+	"data":{
+		"createTime":"date //创建时间",
+		"id":"int //主键",
+		"groupName":"string //小组名称",
+		"groupType":"int //小组类型：1 永久， 2 临时",
+		"groupStatus":"int //小组状态：0 禁用，1 启用",
+		"eventId":"int //事件编码：事件管理表主键ID",
+		"eventName":"string //事件名称",
+		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"isDelete":"int //是否删除：0 未删， 1 已删",
+		"createMan":"int //创建人(登录用户表ID)"
+	}
 }</pre>
         <div class="form-group">
             <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_add_ResponseGenericData.html"><i
@@ -420,7 +440,7 @@
 	}],
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
-	"groupName":"string //小组名称",
+	"groupName":"string //小组名称【必须】",
 	"groupType":"int //小组类型：1 永久， 2 临时",
 	"groupStatus":"int //小组状态：0 禁用，1 启用",
 	"eventId":"int //事件编码：事件管理表主键ID",
@@ -434,7 +454,18 @@
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
 	"message":"string //返回消息",
-	"data":{}
+	"data":{
+		"createTime":"date //创建时间",
+		"id":"int //主键",
+		"groupName":"string //小组名称",
+		"groupType":"int //小组类型：1 永久， 2 临时",
+		"groupStatus":"int //小组状态：0 禁用，1 启用",
+		"eventId":"int //事件编码：事件管理表主键ID",
+		"eventName":"string //事件名称",
+		"isEventType":"int //是否事件类型：1 普通， 2 事件",
+		"isDelete":"int //是否删除：0 未删， 1 已删",
+		"createMan":"int //创建人(登录用户表ID)"
+	}
 }</pre>
         <div class="form-group">
             <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_schedule_controller_RescueGroupController_update_ResponseGenericData.html"><i
@@ -551,7 +582,7 @@
 	}],
 	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
 	"id":"int //主键",
-	"groupName":"string //小组名称",
+	"groupName":"string //小组名称【必须】",
 	"groupType":"int //小组类型：1 永久， 2 临时",
 	"groupStatus":"int //小组状态：0 禁用，1 启用",
 	"eventId":"int //事件编码：事件管理表主键ID",
@@ -665,7 +696,7 @@
                     <tr>
                         <td>groupName</td>
                         <td>string</td>
-                        <td>否</td>
+                        <td>是</td>
                         <td>小组名称</td>
                     </tr>
                     <tr>
@@ -777,6 +808,8 @@
             {name: '电子围栏警告日志.全部电子围栏警告日志-无分页', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findAll'},
             {name: '电子围栏警告日志.全部电子围栏警告日志-分页-简单条件', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findList'},
             {name: '电子围栏警告日志.全部电子围栏警告日志-分页-复杂条件', url: 'com_dottmed_emergency_schedule_controller_ElectronicFenceWarnLogController.html#findPageCriteria'},
+            {name: '事件信息.启动当前将要处理的事件', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#open'},
+            {name: '事件信息.关闭当前将要处理的事件', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#close'},
             {name: '事件信息.新增事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#add'},
             {name: '事件信息.修改事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#update'},
             {name: '事件信息.查找事件信息', url: 'com_dottmed_emergency_schedule_controller_EventInfoController.html#findById'},
@@ -802,6 +835,7 @@
             {name: '人员信息.将成员关联到群组', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#join'},
             {name: '人员信息.修改人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#update'},
             {name: '人员信息.查找人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findById'},
+            {name: '人员信息.根据小组ID查找人员信息列表', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findAllByGroupId'},
             {name: '人员信息.删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteById'},
             {name: '人员信息.批量删除人员信息', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#deleteBatch'},
             {name: '人员信息.全部人员信息-无分页', url: 'com_dottmed_emergency_schedule_controller_PersonnelInfoController.html#findAll'},

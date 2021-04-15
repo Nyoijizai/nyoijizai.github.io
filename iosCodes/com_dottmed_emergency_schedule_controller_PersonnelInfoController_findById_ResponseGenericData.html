@@ -42,19 +42,55 @@
 //app登录密码
 @property (nonatomic, assign) NSString personPwd;
 //事件编码：事件管理表主键
-@property (nonatomic, assign) NSString eventId;
+@property (nonatomic, strong) NSInteger eventId;
 //事件名称
 @property (nonatomic, assign) NSString eventName;
 //是否事件类型：1 普通， 2 事件
 @property (nonatomic, strong) NSInteger isEventType;
 //终端实时状态：0 离线，1 在线
 @property (nonatomic, strong) NSInteger status;
+//是否已有触发器：0 无(默认)，1 已有
+@property (nonatomic, strong) NSInteger isExistTrigger;
 //最后一次定位经度
 @property (nonatomic, assign) NSString lastLongitude;
 //最后一次定位纬度
 @property (nonatomic, assign) NSString lastLatitude;
 //最后一次定位时间
 @property (nonatomic, assign) NSString lastLbsTime;
+//创建人(登录用户表ID)
+@property (nonatomic, strong) NSInteger createMan;
+//归属的救援小组列表
+@property (nonatomic, strong) RescueGroup[] groupList;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface RescueGroup : NSObject
+
+//创建时间
+@property (nonatomic, assign) NSString createTime;
+//主键
+@property (nonatomic, strong) NSInteger id;
+//小组名称
+@property (nonatomic, assign) NSString groupName;
+//小组类型：1 永久， 2 临时
+@property (nonatomic, strong) NSInteger groupType;
+//小组状态：0 禁用，1 启用
+@property (nonatomic, strong) NSInteger groupStatus;
+//事件编码：事件管理表主键ID
+@property (nonatomic, strong) NSInteger eventId;
+//事件名称
+@property (nonatomic, assign) NSString eventName;
+//是否事件类型：1 普通， 2 事件
+@property (nonatomic, strong) NSInteger isEventType;
+//是否删除：0 未删， 1 已删
+@property (nonatomic, strong) NSInteger isDelete;
 //创建人(登录用户表ID)
 @property (nonatomic, strong) NSInteger createMan;
 

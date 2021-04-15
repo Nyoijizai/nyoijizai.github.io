@@ -112,7 +112,7 @@ public class SurveyInfo implements Serializable{
     private String eventName; //事件名称
     private int isDelete; //是否删除：0 未删， 1 已删
     private int isEventType; //是否事件类型：1 普通， 2 事件
-    private FileResourceInfo[] fileList; //
+    private String fileUrl; //文件公网访问URL地址
 
     public String getCreateTime(){
         return createTime;
@@ -226,71 +226,6 @@ public class SurveyInfo implements Serializable{
         this.isEventType = isEventType;
     }
 
-    public FileResourceInfo[] getFileList(){
-        return fileList;
-    }
-
-    public void setFileList(FileResourceInfo[] fileList){
-        this.fileList = fileList;
-    }
-
-}
-</pre>
-
-
-<pre class="prettyprint lang-java">
-public class FileResourceInfo implements Serializable{
-
-    private String createTime; //创建时间
-    private int id; //主键
-    private String oldFileName; //文件原名称：上传文件的原名称
-    private String newFileName; //文件名称：上传文件后生成的新名称
-    private String fileType; //文件类型：上传文件的后缀名
-    private String fileUrl; //文件公网访问URL地址
-    private String channelTable; //文件的来源业务表
-    private int createMan; //创建人
-    private SurveyInfo surveyInfo; //主表ID
-
-    public String getCreateTime(){
-        return createTime;
-    }
-
-    public void setCreateTime(String createTime){
-        this.createTime = createTime;
-    }
-
-    public int getId(){
-        return id;
-    }
-
-    public void setId(int id){
-        this.id = id;
-    }
-
-    public String getOldFileName(){
-        return oldFileName;
-    }
-
-    public void setOldFileName(String oldFileName){
-        this.oldFileName = oldFileName;
-    }
-
-    public String getNewFileName(){
-        return newFileName;
-    }
-
-    public void setNewFileName(String newFileName){
-        this.newFileName = newFileName;
-    }
-
-    public String getFileType(){
-        return fileType;
-    }
-
-    public void setFileType(String fileType){
-        this.fileType = fileType;
-    }
-
     public String getFileUrl(){
         return fileUrl;
     }
@@ -299,33 +234,8 @@ public class FileResourceInfo implements Serializable{
         this.fileUrl = fileUrl;
     }
 
-    public String getChannelTable(){
-        return channelTable;
-    }
-
-    public void setChannelTable(String channelTable){
-        this.channelTable = channelTable;
-    }
-
-    public int getCreateMan(){
-        return createMan;
-    }
-
-    public void setCreateMan(int createMan){
-        this.createMan = createMan;
-    }
-
-    public SurveyInfo getSurveyInfo(){
-        return surveyInfo;
-    }
-
-    public void setSurveyInfo(SurveyInfo surveyInfo){
-        this.surveyInfo = surveyInfo;
-    }
-
 }
 </pre>
-
 
 
 
