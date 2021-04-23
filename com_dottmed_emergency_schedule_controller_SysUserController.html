@@ -384,13 +384,15 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"userName":"string //用户姓名",
 	"phone":"string //联系手机",
 	"loginAccount":"string //登录账号【必须】",
 	"loginPassword":"string //登录密码【必须】",
-	"position":"string //职位名称",
+	"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+	"workNumber":"string //工号",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }</pre>
     <p><strong>返回结果</strong></p>
@@ -404,7 +406,9 @@
 		"phone":"string //联系手机",
 		"loginAccount":"string //登录账号",
 		"loginPassword":"string //登录密码",
-		"position":"string //职位名称"
+		"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+		"workNumber":"string //工号",
+		"createMan":"int //创建人"
 	}
 }</pre>
         <div class="form-group">
@@ -455,13 +459,15 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"userName":"string //用户姓名",
 	"phone":"string //联系手机",
 	"loginAccount":"string //登录账号【必须】",
 	"loginPassword":"string //登录密码【必须】",
-	"position":"string //职位名称",
+	"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+	"workNumber":"string //工号",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }</pre>
     <p><strong>返回结果</strong></p>
@@ -495,13 +501,15 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"userName":"string //用户姓名",
 	"phone":"string //联系手机",
 	"loginAccount":"string //登录账号【必须】",
 	"loginPassword":"string //登录密码【必须】",
-	"position":"string //职位名称",
+	"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+	"workNumber":"string //工号",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }</pre>
     <p><strong>返回结果</strong></p>
@@ -553,7 +561,9 @@
 		"phone":"string //联系手机",
 		"loginAccount":"string //登录账号",
 		"loginPassword":"string //登录密码",
-		"position":"string //职位名称"
+		"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+		"workNumber":"string //工号",
+		"createMan":"int //创建人"
 	}
 }</pre>
         <div class="form-group">
@@ -621,13 +631,15 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"userName":"string //用户姓名",
 	"phone":"string //联系手机",
 	"loginAccount":"string //登录账号【必须】",
 	"loginPassword":"string //登录密码【必须】",
-	"position":"string //职位名称",
+	"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+	"workNumber":"string //工号",
+	"createMan":"int //创建人",
 	"createTime":"date //创建时间"
 }]</pre>
     <p><strong>返回结果</strong></p>
@@ -664,7 +676,9 @@
 		"phone":"string //联系手机",
 		"loginAccount":"string //登录账号",
 		"loginPassword":"string //登录密码",
-		"position":"string //职位名称"
+		"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+		"workNumber":"string //工号",
+		"createMan":"int //创建人"
 	}
 }</pre>
         <div class="form-group">
@@ -720,7 +734,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>
@@ -753,10 +767,22 @@
                         <td>登录密码</td>
                     </tr>
                     <tr>
-                        <td>position</td>
+                        <td>userType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员</td>
+                    </tr>
+                    <tr>
+                        <td>workNumber</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>职位名称</td>
+                        <td>工号</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人</td>
                     </tr>
                     <tr>
                         <td>createTime</td>
@@ -776,7 +802,9 @@
 		"phone":"string //联系手机",
 		"loginAccount":"string //登录账号",
 		"loginPassword":"string //登录密码",
-		"position":"string //职位名称"
+		"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+		"workNumber":"string //工号",
+		"createMan":"int //创建人"
 	}]
 }</pre>
         <div class="form-group">
@@ -832,7 +860,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>
@@ -865,10 +893,22 @@
                         <td>登录密码</td>
                     </tr>
                     <tr>
-                        <td>position</td>
+                        <td>userType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员</td>
+                    </tr>
+                    <tr>
+                        <td>workNumber</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>职位名称</td>
+                        <td>工号</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人</td>
                     </tr>
                     <tr>
                         <td>createTime</td>
@@ -893,7 +933,9 @@
 			"phone":"string //联系手机",
 			"loginAccount":"string //登录账号",
 			"loginPassword":"string //登录密码",
-			"position":"string //职位名称"
+			"userType":"int //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员",
+			"workNumber":"string //工号",
+			"createMan":"int //创建人"
 		}]
 	}
 }</pre>

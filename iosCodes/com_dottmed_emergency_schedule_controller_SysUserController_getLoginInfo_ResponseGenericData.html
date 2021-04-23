@@ -43,8 +43,12 @@
 @property (nonatomic, assign) NSString loginAccount;
 //登录密码
 @property (nonatomic, assign) NSString loginPassword;
-//职位名称
-@property (nonatomic, assign) NSString position;
+//账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员
+@property (nonatomic, strong) NSInteger userType;
+//工号
+@property (nonatomic, assign) NSString workNumber;
+//创建人
+@property (nonatomic, strong) NSInteger createMan;
 
 
 @end

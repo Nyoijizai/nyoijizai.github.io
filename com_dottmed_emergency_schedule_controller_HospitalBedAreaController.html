@@ -384,7 +384,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaName":"string //病床区域名称",
 	"createMan":"int //创建人",
@@ -422,7 +422,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaName":"string //病床区域名称",
 	"createMan":"int //创建人",
@@ -543,7 +543,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaName":"string //病床区域名称",
 	"createMan":"int //创建人",
@@ -573,6 +573,75 @@
     <code>/hospitalBed/area/all</code>
         <span class="label label-default">GET</span>
 </p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>bedAreaName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>病床区域名称</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+                    <tr>
+                        <td>isEventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否事件类型：1 普通， 2 事件</td>
+                    </tr>
+        </table>
     <p><strong>返回结果</strong></p>
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
@@ -638,7 +707,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>

@@ -106,7 +106,6 @@ public class ElectronicFenceInfo implements Serializable{
     private String fenceScope; //围栏坐标范围
     private int isEventType; //是否事件类型：1 普通， 2 事件
     private int createMan; //创建人
-    private String createTime; //创建时间
 
     public String getCreateTime(){
         return createTime;
@@ -170,14 +169,6 @@ public class ElectronicFenceInfo implements Serializable{
 
     public void setCreateMan(int createMan){
         this.createMan = createMan;
-    }
-
-    public String getCreateTime(){
-        return createTime;
-    }
-
-    public void setCreateTime(String createTime){
-        this.createTime = createTime;
     }
 
 }

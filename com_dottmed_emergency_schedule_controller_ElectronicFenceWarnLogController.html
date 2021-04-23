@@ -384,7 +384,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"fenceId":"int //围栏ID",
 	"fenceName":"string //围栏名称",
@@ -433,7 +433,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"fenceId":"int //围栏ID",
 	"fenceName":"string //围栏名称",
@@ -574,7 +574,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"fenceId":"int //围栏ID",
 	"fenceName":"string //围栏名称",
@@ -615,6 +615,141 @@
     <code>/fence/warn/log/all</code>
         <span class="label label-default">GET</span>
 </p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>fenceId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>围栏ID</td>
+                    </tr>
+                    <tr>
+                        <td>fenceName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>围栏名称</td>
+                    </tr>
+                    <tr>
+                        <td>personId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>人员信息表ID</td>
+                    </tr>
+                    <tr>
+                        <td>personName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>人员名称</td>
+                    </tr>
+                    <tr>
+                        <td>personPhone</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>联系方式</td>
+                    </tr>
+                    <tr>
+                        <td>groupId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>应急小组表ID</td>
+                    </tr>
+                    <tr>
+                        <td>groupName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>应急小组名称</td>
+                    </tr>
+                    <tr>
+                        <td>terminalDeviceCode</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>终端设备号</td>
+                    </tr>
+                    <tr>
+                        <td>warnType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>警告类型：1 未到场， 2 擅离， 3 闯入</td>
+                    </tr>
+                    <tr>
+                        <td>isRead</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否已读： 0 未读， 1 已读</td>
+                    </tr>
+                    <tr>
+                        <td>isEventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否事件类型：1 普通， 2 事件</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+                    <tr>
+                        <td>isDelete</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否删除：0 未删， 1 已删</td>
+                    </tr>
+                    <tr>
+                        <td>startDate</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>开始日期</td>
+                    </tr>
+                    <tr>
+                        <td>endDate</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>结束日期</td>
+                    </tr>
+        </table>
     <p><strong>返回结果</strong></p>
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
@@ -689,7 +824,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>
@@ -868,7 +1003,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>

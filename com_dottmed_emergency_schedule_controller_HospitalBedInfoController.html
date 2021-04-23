@@ -384,7 +384,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaId":"int //病床归属区域ID",
 	"bedType":"int //病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU",
@@ -444,7 +444,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaId":"int //病床归属区域ID",
 	"bedType":"int //病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU",
@@ -609,7 +609,7 @@
 		"direction":"string //排序方式：asc | desc",
 		"property":"string //排序字段"
 	}],
-	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则",
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\r\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
 	"id":"int //主键",
 	"bedAreaId":"int //病床归属区域ID",
 	"bedType":"int //病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU",
@@ -661,6 +661,207 @@
     <code>/hospitalBed/info/all</code>
         <span class="label label-default">GET</span>
 </p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>bedAreaId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>病床归属区域ID</td>
+                    </tr>
+                    <tr>
+                        <td>bedType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>病床类型：1 儿童， 2 男病床， 3 女病床， 4 康复， 5 隔离， 6 ICU</td>
+                    </tr>
+                    <tr>
+                        <td>caseHistoryNo</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>病历编号</td>
+                    </tr>
+                    <tr>
+                        <td>createdCardTime</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>建卡时间</td>
+                    </tr>
+                    <tr>
+                        <td>currentCourse</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>当前病程</td>
+                    </tr>
+                    <tr>
+                        <td>priority</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>优先级：0 死亡， 1 第一优先， 2 第二优先， 3 第三优先</td>
+                    </tr>
+                    <tr>
+                        <td>injuryCategory</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>伤情类别</td>
+                    </tr>
+                    <tr>
+                        <td>diseaseReason</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>疾病原由</td>
+                    </tr>
+                    <tr>
+                        <td>isInsulate</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否隔离：0 否， 1 是</td>
+                    </tr>
+                    <tr>
+                        <td>patientName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>病人姓名</td>
+                    </tr>
+                    <tr>
+                        <td>patientAge</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>病人年龄</td>
+                    </tr>
+                    <tr>
+                        <td>patientDiet</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>饮食</td>
+                    </tr>
+                    <tr>
+                        <td>patientChiefComplaint</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>主诉</td>
+                    </tr>
+                    <tr>
+                        <td>preDisasterSalvation</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>灾前救助</td>
+                    </tr>
+                    <tr>
+                        <td>specialProtection</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>特殊保护</td>
+                    </tr>
+                    <tr>
+                        <td>receptionMeasure</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>接诊防护措施</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignTemperature</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>体温</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignBloodOxygen</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>血氧</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignPulseRate</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>脉率</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignRespiratoryRate</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>呼吸率</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignBloodPressure</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>血压</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignStature</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>身高</td>
+                    </tr>
+                    <tr>
+                        <td>vitalSignWeight</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>体重</td>
+                    </tr>
+                    <tr>
+                        <td>isEventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>是否事件类型：1 普通， 2 事件</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+        </table>
     <p><strong>返回结果</strong></p>
     <pre class="prettyprint lang-json">{
 	"code":"int //返回码",
@@ -748,7 +949,7 @@
                         <td>pageOrdersJSON</td>
                         <td>string</td>
                         <td>否</td>
-                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
                     </tr>
                     <tr>
                         <td>id</td>

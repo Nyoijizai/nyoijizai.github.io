@@ -104,7 +104,9 @@ public class SysUser implements Serializable{
     private String phone; //联系手机
     private String loginAccount; //登录账号
     private String loginPassword; //登录密码
-    private String position; //职位名称
+    private int userType; //账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员
+    private String workNumber; //工号
+    private int createMan; //创建人
 
     public String getCreateTime(){
         return createTime;
@@ -154,12 +156,28 @@ public class SysUser implements Serializable{
         this.loginPassword = loginPassword;
     }
 
-    public String getPosition(){
-        return position;
+    public int getUserType(){
+        return userType;
     }
 
-    public void setPosition(String position){
-        this.position = position;
+    public void setUserType(int userType){
+        this.userType = userType;
+    }
+
+    public String getWorkNumber(){
+        return workNumber;
+    }
+
+    public void setWorkNumber(String workNumber){
+        this.workNumber = workNumber;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
     }
 
 }
