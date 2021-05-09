@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private GoodsInOutStock data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public GoodsInOutStock getData(){
+        return data;
+    }
+
+    public void setData(GoodsInOutStock data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class GoodsInOutStock implements Serializable{
+
+    private int id; //id
+    private int listid; //装箱清单，t_goods_inbox_list id
+    private String ontime; //操作时间
+    private int flag; //出入库标示，0：入库，1：出库
+    private int personid; //出入库的人员id，关联sysresource的id
+    private int eventid; //事件ID，出库时关联t_emergency_event
+    private int goodsId; //物资ID
+    private String contact; //联系方式
+    private String department; //科室
+    private String name; //姓名
+    private String sign; //签名
+    private String workno; //胸牌号/工号
+    private int isNewestRecord; //是否为最新记录
+    private String lendWay; //物资借出方式： 0 单独借出， 1 装箱借出
+    private int departmentOption; //科室
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getListid(){
+        return listid;
+    }
+
+    public void setListid(int listid){
+        this.listid = listid;
+    }
+
+    public String getOntime(){
+        return ontime;
+    }
+
+    public void setOntime(String ontime){
+        this.ontime = ontime;
+    }
+
+    public int getFlag(){
+        return flag;
+    }
+
+    public void setFlag(int flag){
+        this.flag = flag;
+    }
+
+    public int getPersonid(){
+        return personid;
+    }
+
+    public void setPersonid(int personid){
+        this.personid = personid;
+    }
+
+    public int getEventid(){
+        return eventid;
+    }
+
+    public void setEventid(int eventid){
+        this.eventid = eventid;
+    }
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public String getContact(){
+        return contact;
+    }
+
+    public void setContact(String contact){
+        this.contact = contact;
+    }
+
+    public String getDepartment(){
+        return department;
+    }
+
+    public void setDepartment(String department){
+        this.department = department;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getSign(){
+        return sign;
+    }
+
+    public void setSign(String sign){
+        this.sign = sign;
+    }
+
+    public String getWorkno(){
+        return workno;
+    }
+
+    public void setWorkno(String workno){
+        this.workno = workno;
+    }
+
+    public int getIsNewestRecord(){
+        return isNewestRecord;
+    }
+
+    public void setIsNewestRecord(int isNewestRecord){
+        this.isNewestRecord = isNewestRecord;
+    }
+
+    public String getLendWay(){
+        return lendWay;
+    }
+
+    public void setLendWay(String lendWay){
+        this.lendWay = lendWay;
+    }
+
+    public int getDepartmentOption(){
+        return departmentOption;
+    }
+
+    public void setDepartmentOption(int departmentOption){
+        this.departmentOption = departmentOption;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

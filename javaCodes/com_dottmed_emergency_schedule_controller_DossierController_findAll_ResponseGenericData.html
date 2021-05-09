@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private Dossier[] data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public Dossier[] getData(){
+        return data;
+    }
+
+    public void setData(Dossier[] data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Dossier implements Serializable{
+
+    private int id; //id
+    private String barcode; //病程编号
+    private String name; //病人姓名
+    private int sex; //性别
+    private int age; //年龄
+    private String mobile; //联系号码
+    private String address; //联系地址
+    private String contactName; //紧急联系人
+    private String contactMobile; //紧急联系人电话
+    private String history; //既往病史,首诊病史
+    private Object createtime; //病历创建时间
+    private int creater; //创建人，关联sysresource
+    private String updatetime; //病历更新时间
+    private int updater; //更新人，关联sysresource
+    private String temperature; //温度
+    private String pulseRate; //脉率
+    private String breathRate; //呼吸率
+    private String bloodPressureLow; //血压，收缩压
+    private String bloodPressureHeight; //血压，舒张压
+    private int injureType; //injureType
+    private int ideology; //ideology
+    private int depart; //depart
+    private int tips; //tips
+    private String diagnose; //伤情描述
+    private int isdeleted; //isdeleted
+    private String dite; //dite
+    private int isolation; //isolation
+    private String protective; //接诊防护措施
+    private int safeguarding; //safeguarding
+    private int preDisaster; //preDisaster
+    private int rehab; //康复治疗,在病程中选康复科时有用，关联t_dictvalue ,menuid=40
+    private int referrals; //办结 ，关联t_dictvalue ,menuid=41
+    private int bedno; //关联t_bed
+    private int relation; //relation
+    private String nation; //民族
+    private String living; //生活地
+    private String relator; //病史陈述者
+    private int state; //0:finished,1：ing
+    private int finished; //0:ing,1:finished
+    private String finishedRemark; //完结备注
+    private int createrDepartId; //创建人部门,department
+    private int nextDiseaseType; //下一病程类型,分诊时使用,关联t_dict_value,menuid=28
+    private int finishedType; //办结类型,办结时使用,关联t_dict_value,menuid=44
+    private int spo2; //血氧
+    private int height; //身高
+    private int weight; //体重
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getBarcode(){
+        return barcode;
+    }
+
+    public void setBarcode(String barcode){
+        this.barcode = barcode;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public int getSex(){
+        return sex;
+    }
+
+    public void setSex(int sex){
+        this.sex = sex;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public String getMobile(){
+        return mobile;
+    }
+
+    public void setMobile(String mobile){
+        this.mobile = mobile;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    public String getContactName(){
+        return contactName;
+    }
+
+    public void setContactName(String contactName){
+        this.contactName = contactName;
+    }
+
+    public String getContactMobile(){
+        return contactMobile;
+    }
+
+    public void setContactMobile(String contactMobile){
+        this.contactMobile = contactMobile;
+    }
+
+    public String getHistory(){
+        return history;
+    }
+
+    public void setHistory(String history){
+        this.history = history;
+    }
+
+    public Object getCreatetime(){
+        return createtime;
+    }
+
+    public void setCreatetime(Object createtime){
+        this.createtime = createtime;
+    }
+
+    public int getCreater(){
+        return creater;
+    }
+
+    public void setCreater(int creater){
+        this.creater = creater;
+    }
+
+    public String getUpdatetime(){
+        return updatetime;
+    }
+
+    public void setUpdatetime(String updatetime){
+        this.updatetime = updatetime;
+    }
+
+    public int getUpdater(){
+        return updater;
+    }
+
+    public void setUpdater(int updater){
+        this.updater = updater;
+    }
+
+    public String getTemperature(){
+        return temperature;
+    }
+
+    public void setTemperature(String temperature){
+        this.temperature = temperature;
+    }
+
+    public String getPulseRate(){
+        return pulseRate;
+    }
+
+    public void setPulseRate(String pulseRate){
+        this.pulseRate = pulseRate;
+    }
+
+    public String getBreathRate(){
+        return breathRate;
+    }
+
+    public void setBreathRate(String breathRate){
+        this.breathRate = breathRate;
+    }
+
+    public String getBloodPressureLow(){
+        return bloodPressureLow;
+    }
+
+    public void setBloodPressureLow(String bloodPressureLow){
+        this.bloodPressureLow = bloodPressureLow;
+    }
+
+    public String getBloodPressureHeight(){
+        return bloodPressureHeight;
+    }
+
+    public void setBloodPressureHeight(String bloodPressureHeight){
+        this.bloodPressureHeight = bloodPressureHeight;
+    }
+
+    public int getInjureType(){
+        return injureType;
+    }
+
+    public void setInjureType(int injureType){
+        this.injureType = injureType;
+    }
+
+    public int getIdeology(){
+        return ideology;
+    }
+
+    public void setIdeology(int ideology){
+        this.ideology = ideology;
+    }
+
+    public int getDepart(){
+        return depart;
+    }
+
+    public void setDepart(int depart){
+        this.depart = depart;
+    }
+
+    public int getTips(){
+        return tips;
+    }
+
+    public void setTips(int tips){
+        this.tips = tips;
+    }
+
+    public String getDiagnose(){
+        return diagnose;
+    }
+
+    public void setDiagnose(String diagnose){
+        this.diagnose = diagnose;
+    }
+
+    public int getIsdeleted(){
+        return isdeleted;
+    }
+
+    public void setIsdeleted(int isdeleted){
+        this.isdeleted = isdeleted;
+    }
+
+    public String getDite(){
+        return dite;
+    }
+
+    public void setDite(String dite){
+        this.dite = dite;
+    }
+
+    public int getIsolation(){
+        return isolation;
+    }
+
+    public void setIsolation(int isolation){
+        this.isolation = isolation;
+    }
+
+    public String getProtective(){
+        return protective;
+    }
+
+    public void setProtective(String protective){
+        this.protective = protective;
+    }
+
+    public int getSafeguarding(){
+        return safeguarding;
+    }
+
+    public void setSafeguarding(int safeguarding){
+        this.safeguarding = safeguarding;
+    }
+
+    public int getPreDisaster(){
+        return preDisaster;
+    }
+
+    public void setPreDisaster(int preDisaster){
+        this.preDisaster = preDisaster;
+    }
+
+    public int getRehab(){
+        return rehab;
+    }
+
+    public void setRehab(int rehab){
+        this.rehab = rehab;
+    }
+
+    public int getReferrals(){
+        return referrals;
+    }
+
+    public void setReferrals(int referrals){
+        this.referrals = referrals;
+    }
+
+    public int getBedno(){
+        return bedno;
+    }
+
+    public void setBedno(int bedno){
+        this.bedno = bedno;
+    }
+
+    public int getRelation(){
+        return relation;
+    }
+
+    public void setRelation(int relation){
+        this.relation = relation;
+    }
+
+    public String getNation(){
+        return nation;
+    }
+
+    public void setNation(String nation){
+        this.nation = nation;
+    }
+
+    public String getLiving(){
+        return living;
+    }
+
+    public void setLiving(String living){
+        this.living = living;
+    }
+
+    public String getRelator(){
+        return relator;
+    }
+
+    public void setRelator(String relator){
+        this.relator = relator;
+    }
+
+    public int getState(){
+        return state;
+    }
+
+    public void setState(int state){
+        this.state = state;
+    }
+
+    public int getFinished(){
+        return finished;
+    }
+
+    public void setFinished(int finished){
+        this.finished = finished;
+    }
+
+    public String getFinishedRemark(){
+        return finishedRemark;
+    }
+
+    public void setFinishedRemark(String finishedRemark){
+        this.finishedRemark = finishedRemark;
+    }
+
+    public int getCreaterDepartId(){
+        return createrDepartId;
+    }
+
+    public void setCreaterDepartId(int createrDepartId){
+        this.createrDepartId = createrDepartId;
+    }
+
+    public int getNextDiseaseType(){
+        return nextDiseaseType;
+    }
+
+    public void setNextDiseaseType(int nextDiseaseType){
+        this.nextDiseaseType = nextDiseaseType;
+    }
+
+    public int getFinishedType(){
+        return finishedType;
+    }
+
+    public void setFinishedType(int finishedType){
+        this.finishedType = finishedType;
+    }
+
+    public int getSpo2(){
+        return spo2;
+    }
+
+    public void setSpo2(int spo2){
+        this.spo2 = spo2;
+    }
+
+    public int getHeight(){
+        return height;
+    }
+
+    public void setHeight(int height){
+        this.height = height;
+    }
+
+    public int getWeight(){
+        return weight;
+    }
+
+    public void setWeight(int weight){
+        this.weight = weight;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

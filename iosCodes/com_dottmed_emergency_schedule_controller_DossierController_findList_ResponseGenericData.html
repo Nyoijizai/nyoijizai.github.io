@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) PageResult data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface PageResult : NSObject
+
+//当前页(分页工具类Pageable第一页下标为0)
+@property (nonatomic, strong) NSInteger currentPage;
+//页大小
+@property (nonatomic, strong) NSInteger pageSize;
+//总页数
+@property (nonatomic, strong) NSInteger pageTotal;
+//总条数
+@property (nonatomic, strong) long totalNum;
+//返回对象List
+@property (nonatomic, strong) Dossier[] content;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Dossier : NSObject
+
+//id
+@property (nonatomic, strong) NSInteger id;
+//病程编号
+@property (nonatomic, assign) NSString barcode;
+//病人姓名
+@property (nonatomic, assign) NSString name;
+//性别
+@property (nonatomic, strong) NSInteger sex;
+//年龄
+@property (nonatomic, strong) NSInteger age;
+//联系号码
+@property (nonatomic, assign) NSString mobile;
+//联系地址
+@property (nonatomic, assign) NSString address;
+//紧急联系人
+@property (nonatomic, assign) NSString contactName;
+//紧急联系人电话
+@property (nonatomic, assign) NSString contactMobile;
+//既往病史,首诊病史
+@property (nonatomic, assign) NSString history;
+//病历创建时间
+@property (nonatomic, strong) Object createtime;
+//创建人，关联sysresource
+@property (nonatomic, strong) NSInteger creater;
+//病历更新时间
+@property (nonatomic, assign) NSString updatetime;
+//更新人，关联sysresource
+@property (nonatomic, strong) NSInteger updater;
+//温度
+@property (nonatomic, assign) NSString temperature;
+//脉率
+@property (nonatomic, assign) NSString pulseRate;
+//呼吸率
+@property (nonatomic, assign) NSString breathRate;
+//血压，收缩压
+@property (nonatomic, assign) NSString bloodPressureLow;
+//血压，舒张压
+@property (nonatomic, assign) NSString bloodPressureHeight;
+//injureType
+@property (nonatomic, strong) NSInteger injureType;
+//ideology
+@property (nonatomic, strong) NSInteger ideology;
+//depart
+@property (nonatomic, strong) NSInteger depart;
+//tips
+@property (nonatomic, strong) NSInteger tips;
+//伤情描述
+@property (nonatomic, assign) NSString diagnose;
+//isdeleted
+@property (nonatomic, strong) NSInteger isdeleted;
+//dite
+@property (nonatomic, assign) NSString dite;
+//isolation
+@property (nonatomic, strong) NSInteger isolation;
+//接诊防护措施
+@property (nonatomic, assign) NSString protective;
+//safeguarding
+@property (nonatomic, strong) NSInteger safeguarding;
+//preDisaster
+@property (nonatomic, strong) NSInteger preDisaster;
+//康复治疗,在病程中选康复科时有用，关联t_dictvalue ,menuid=40
+@property (nonatomic, strong) NSInteger rehab;
+//办结 ，关联t_dictvalue ,menuid=41
+@property (nonatomic, strong) NSInteger referrals;
+//关联t_bed
+@property (nonatomic, strong) NSInteger bedno;
+//relation
+@property (nonatomic, strong) NSInteger relation;
+//民族
+@property (nonatomic, assign) NSString nation;
+//生活地
+@property (nonatomic, assign) NSString living;
+//病史陈述者
+@property (nonatomic, assign) NSString relator;
+//0:finished,1：ing
+@property (nonatomic, strong) NSInteger state;
+//0:ing,1:finished
+@property (nonatomic, strong) NSInteger finished;
+//完结备注
+@property (nonatomic, assign) NSString finishedRemark;
+//创建人部门,department
+@property (nonatomic, strong) NSInteger createrDepartId;
+//下一病程类型,分诊时使用,关联t_dict_value,menuid=28
+@property (nonatomic, strong) NSInteger nextDiseaseType;
+//办结类型,办结时使用,关联t_dict_value,menuid=44
+@property (nonatomic, strong) NSInteger finishedType;
+//血氧
+@property (nonatomic, strong) NSInteger spo2;
+//身高
+@property (nonatomic, strong) NSInteger height;
+//体重
+@property (nonatomic, strong) NSInteger weight;
+
+
+@end
+</xmp>
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

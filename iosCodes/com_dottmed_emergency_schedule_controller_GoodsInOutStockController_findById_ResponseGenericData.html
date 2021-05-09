@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) GoodsInOutStock data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface GoodsInOutStock : NSObject
+
+//id
+@property (nonatomic, strong) NSInteger id;
+//装箱清单，t_goods_inbox_list id
+@property (nonatomic, strong) NSInteger listid;
+//操作时间
+@property (nonatomic, assign) NSString ontime;
+//出入库标示，0：入库，1：出库
+@property (nonatomic, strong) NSInteger flag;
+//出入库的人员id，关联sysresource的id
+@property (nonatomic, strong) NSInteger personid;
+//事件ID，出库时关联t_emergency_event
+@property (nonatomic, strong) NSInteger eventid;
+//物资ID
+@property (nonatomic, strong) NSInteger goodsId;
+//联系方式
+@property (nonatomic, assign) NSString contact;
+//科室
+@property (nonatomic, assign) NSString department;
+//姓名
+@property (nonatomic, assign) NSString name;
+//签名
+@property (nonatomic, assign) NSString sign;
+//胸牌号/工号
+@property (nonatomic, assign) NSString workno;
+//是否为最新记录
+@property (nonatomic, strong) NSInteger isNewestRecord;
+//物资借出方式： 0 单独借出， 1 装箱借出
+@property (nonatomic, assign) NSString lendWay;
+//科室
+@property (nonatomic, strong) NSInteger departmentOption;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

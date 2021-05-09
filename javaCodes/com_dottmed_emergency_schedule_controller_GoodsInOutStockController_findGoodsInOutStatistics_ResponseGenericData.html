@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private StatisticsGoods data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public StatisticsGoods getData(){
+        return data;
+    }
+
+    public void setData(StatisticsGoods data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class StatisticsGoods implements Serializable{
+
+    private int sum; //总借货
+    private int alreadyReturn; //已归还数量
+    private int notReturn; //未归还数量
+
+    public int getSum(){
+        return sum;
+    }
+
+    public void setSum(int sum){
+        this.sum = sum;
+    }
+
+    public int getAlreadyReturn(){
+        return alreadyReturn;
+    }
+
+    public void setAlreadyReturn(int alreadyReturn){
+        this.alreadyReturn = alreadyReturn;
+    }
+
+    public int getNotReturn(){
+        return notReturn;
+    }
+
+    public void setNotReturn(int notReturn){
+        this.notReturn = notReturn;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
