@@ -33,7 +33,7 @@
 
 //id
 @property (nonatomic, strong) NSInteger id;
-//病程编号
+//病程编码
 @property (nonatomic, assign) NSString barcode;
 //病人姓名
 @property (nonatomic, assign) NSString name;
@@ -41,7 +41,7 @@
 @property (nonatomic, strong) NSInteger sex;
 //年龄
 @property (nonatomic, strong) NSInteger age;
-//联系号码
+//联系电话
 @property (nonatomic, assign) NSString mobile;
 //联系地址
 @property (nonatomic, assign) NSString address;
@@ -59,7 +59,7 @@
 @property (nonatomic, assign) NSString updatetime;
 //更新人，关联sysresource
 @property (nonatomic, strong) NSInteger updater;
-//温度
+//治疗：1 常规治疗， 2 大手术（除截肢和产科）， 3 小手术， 4 截肢（不包括手指脚趾）， 5 正常分娩， 6 剖腹产， 7 其他产科情况， 8 无需处置， 9 康复护理， 10 物理治疗， 11 作业治疗， 12 假肢矫形， 13 转诊
 @property (nonatomic, assign) NSString temperature;
 //脉率
 @property (nonatomic, assign) NSString pulseRate;
@@ -69,35 +69,35 @@
 @property (nonatomic, assign) NSString bloodPressureLow;
 //血压，舒张压
 @property (nonatomic, assign) NSString bloodPressureHeight;
-//injureType
+//伤情类别：1 创伤损伤，3 传染病，4 手术/急救， 5 其他， 6 创伤损伤，严重头/脊柱伤，7 创伤损伤，严重躯干伤， 8 创伤损伤，严重肢体伤， 9 创伤损伤，中度损伤， 10 创伤损伤，轻度损伤，12 手术/急救，手术 无创伤，13 手术/急救，急救，14 传染病，急性呼吸道感染 ，15 传染病，急性水样腹泻， 16 传染病，急性出血性腹泻，17 传染病，急性黄疸综合征，18 传染病，急性无力肢体麻痹，19 传染病，不明原因发热，20 传染病，急性出血热，21 传染病，疑似麻疹，22 传染病，疑似脑膜炎，23 传染病，疑似破伤风，24 皮肤病，25 其他，急性心理问题，26 其他，疑难产科， 27 其他，严重营养不良，28 其他，其他
 @property (nonatomic, strong) NSInteger injureType;
-//ideology
+//意识形态：1 完全清醒， 2 对声音有反应， 3 对痛楚有反应， 4 全封锁反应
 @property (nonatomic, strong) NSInteger ideology;
-//depart
+//部门
 @property (nonatomic, strong) NSInteger depart;
-//tips
+//伤势标识：1 第一优先，2 第二优先， 3 第三优先， 4 死亡
 @property (nonatomic, strong) NSInteger tips;
 //伤情描述
 @property (nonatomic, assign) NSString diagnose;
-//isdeleted
+//是否删除：0 存在， 1 删除
 @property (nonatomic, strong) NSInteger isdeleted;
-//dite
+//饮食： 1 普通， 2 清真，3 糖尿病配餐
 @property (nonatomic, assign) NSString dite;
-//isolation
+//是否隔离
 @property (nonatomic, strong) NSInteger isolation;
 //接诊防护措施
 @property (nonatomic, assign) NSString protective;
-//safeguarding
+//保障内容：1 弱势儿童， 2 弱势成人， 3 被施与性侵犯暴力， 4 被施与暴力（非性侵）， 5 不需要
 @property (nonatomic, strong) NSInteger safeguarding;
-//preDisaster
+//灾前救助：1 沟通， 2 安全保护 3 联络家人， 4 不需要
 @property (nonatomic, strong) NSInteger preDisaster;
-//康复治疗,在病程中选康复科时有用，关联t_dictvalue ,menuid=40
+//1 转院， 2 自行离开， 3 死亡， 4 其他。康复治疗,在病程中选康复科时有用，关联t_dictvalue ,menuid=40
 @property (nonatomic, strong) NSInteger rehab;
 //办结 ，关联t_dictvalue ,menuid=41
 @property (nonatomic, strong) NSInteger referrals;
 //关联t_bed
 @property (nonatomic, strong) NSInteger bedno;
-//relation
+//疾病与灾难的关系：1 疾病与灾情直接相关， 2 疾病与灾情间接相关，  3 疾病与灾情无关
 @property (nonatomic, strong) NSInteger relation;
 //民族
 @property (nonatomic, assign) NSString nation;
