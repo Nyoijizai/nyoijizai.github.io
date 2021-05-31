@@ -1,0 +1,44 @@
+五月 31, 2021 2:58:12 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\]
+五月 31, 2021 2:58:12 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+五月 31, 2021 2:58:12 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : WarehouseBatchPendingListController.java
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : WarehouseBoxInfoController.java
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : WarehouseMaterialInfoController.java
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : WarehouseBatchPendingListController.java
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : WarehouseBatchPendingListController.java
+五月 31, 2021 2:58:13 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : WarehouseBoxInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : WarehouseBoxInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : WarehouseMaterialInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : WarehouseMaterialInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseBatchPendingListController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseBatchPendingListController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseBoxInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseBoxInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseMaterialInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : D:\workspace\dottmed\dottmed-emergency-warehouse\src\main\java\com\dottmed\emergency\warehouse\controller\WarehouseMaterialInfoController.java
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+五月 31, 2021 2:58:14 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!

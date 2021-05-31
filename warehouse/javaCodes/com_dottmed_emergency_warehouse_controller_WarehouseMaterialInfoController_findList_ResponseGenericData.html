@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private PageResult data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public PageResult getData(){
+        return data;
+    }
+
+    public void setData(PageResult data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class PageResult implements Serializable{
+
+    private int currentPage; //当前页(分页工具类Pageable第一页下标为0)
+    private int pageSize; //页大小
+    private int pageTotal; //总页数
+    private long totalNum; //总条数
+    private WarehouseMaterialInfo[] content; //返回对象List
+
+    public int getCurrentPage(){
+        return currentPage;
+    }
+
+    public void setCurrentPage(int currentPage){
+        this.currentPage = currentPage;
+    }
+
+    public int getPageSize(){
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public int getPageTotal(){
+        return pageTotal;
+    }
+
+    public void setPageTotal(int pageTotal){
+        this.pageTotal = pageTotal;
+    }
+
+    public long getTotalNum(){
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum){
+        this.totalNum = totalNum;
+    }
+
+    public WarehouseMaterialInfo[] getContent(){
+        return content;
+    }
+
+    public void setContent(WarehouseMaterialInfo[] content){
+        this.content = content;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class WarehouseMaterialInfo implements Serializable{
+
+    private int id; //主键
+    private String materialName; //物资名称
+    private String materialCode; //物资编码/RFID
+    private String assetCode; //企业资产编码，如：华西资产编码
+    private int departmentType; //科室类型：1 急救/重症， 2 门诊， 3 后勤， 4 指挥， 5 重症， 6 超声， 7 清创， 8 留观， 9 药房， 10 耗材， 11 手术， 12 防疫/隔离， 13 消毒， 14 住院， 15 检验
+    private String brand; //品牌
+    private String specification; //规格型号
+    private String unit; //单位：台、件、个、袋、包等
+    private int status; //物资状态：1 在库， 2 已出库， 3 待出库， 4 损耗， 5 报废，6 维修，7 保养
+    private int isBox; //是否装箱：0 未装箱， 1 已装箱
+    private String boxCode; //箱子编码/箱子RFID
+    private String boxName; //箱子名称
+    private String rackNumber; //货架编号
+    private int rackPosition; //货架位置：0 未知， 1 一层（下）， 2 二层（中）， 3 三层（上）， 4 四层（顶）
+    private String productionDate; //生产日期
+    private String productionEnterprise; //生产企业
+    private String productionBatch; //生产批号
+    private int isExpiration; //是否有保质期：0 无保质期， 1 有保质期
+    private String expirationDate; //过期时间
+    private int createMan; //创建人
+    private String createTime; //创建时间
+    private String remark; //备注
+    private WarehouseMaterialImage[] materialImages; //物资图片列表
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getMaterialName(){
+        return materialName;
+    }
+
+    public void setMaterialName(String materialName){
+        this.materialName = materialName;
+    }
+
+    public String getMaterialCode(){
+        return materialCode;
+    }
+
+    public void setMaterialCode(String materialCode){
+        this.materialCode = materialCode;
+    }
+
+    public String getAssetCode(){
+        return assetCode;
+    }
+
+    public void setAssetCode(String assetCode){
+        this.assetCode = assetCode;
+    }
+
+    public int getDepartmentType(){
+        return departmentType;
+    }
+
+    public void setDepartmentType(int departmentType){
+        this.departmentType = departmentType;
+    }
+
+    public String getBrand(){
+        return brand;
+    }
+
+    public void setBrand(String brand){
+        this.brand = brand;
+    }
+
+    public String getSpecification(){
+        return specification;
+    }
+
+    public void setSpecification(String specification){
+        this.specification = specification;
+    }
+
+    public String getUnit(){
+        return unit;
+    }
+
+    public void setUnit(String unit){
+        this.unit = unit;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public int getIsBox(){
+        return isBox;
+    }
+
+    public void setIsBox(int isBox){
+        this.isBox = isBox;
+    }
+
+    public String getBoxCode(){
+        return boxCode;
+    }
+
+    public void setBoxCode(String boxCode){
+        this.boxCode = boxCode;
+    }
+
+    public String getBoxName(){
+        return boxName;
+    }
+
+    public void setBoxName(String boxName){
+        this.boxName = boxName;
+    }
+
+    public String getRackNumber(){
+        return rackNumber;
+    }
+
+    public void setRackNumber(String rackNumber){
+        this.rackNumber = rackNumber;
+    }
+
+    public int getRackPosition(){
+        return rackPosition;
+    }
+
+    public void setRackPosition(int rackPosition){
+        this.rackPosition = rackPosition;
+    }
+
+    public String getProductionDate(){
+        return productionDate;
+    }
+
+    public void setProductionDate(String productionDate){
+        this.productionDate = productionDate;
+    }
+
+    public String getProductionEnterprise(){
+        return productionEnterprise;
+    }
+
+    public void setProductionEnterprise(String productionEnterprise){
+        this.productionEnterprise = productionEnterprise;
+    }
+
+    public String getProductionBatch(){
+        return productionBatch;
+    }
+
+    public void setProductionBatch(String productionBatch){
+        this.productionBatch = productionBatch;
+    }
+
+    public int getIsExpiration(){
+        return isExpiration;
+    }
+
+    public void setIsExpiration(int isExpiration){
+        this.isExpiration = isExpiration;
+    }
+
+    public String getExpirationDate(){
+        return expirationDate;
+    }
+
+    public void setExpirationDate(String expirationDate){
+        this.expirationDate = expirationDate;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public String getRemark(){
+        return remark;
+    }
+
+    public void setRemark(String remark){
+        this.remark = remark;
+    }
+
+    public WarehouseMaterialImage[] getMaterialImages(){
+        return materialImages;
+    }
+
+    public void setMaterialImages(WarehouseMaterialImage[] materialImages){
+        this.materialImages = materialImages;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class WarehouseMaterialImage implements Serializable{
+
+    private int id; //主键
+    private int materialId; //物资ID
+    private String oldFileName; //文件原名称
+    private String newFileName; //文件新名称
+    private String fileType; //文件后缀名
+    private String fileUrl; //文件访问地址
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getMaterialId(){
+        return materialId;
+    }
+
+    public void setMaterialId(int materialId){
+        this.materialId = materialId;
+    }
+
+    public String getOldFileName(){
+        return oldFileName;
+    }
+
+    public void setOldFileName(String oldFileName){
+        this.oldFileName = oldFileName;
+    }
+
+    public String getNewFileName(){
+        return newFileName;
+    }
+
+    public void setNewFileName(String newFileName){
+        this.newFileName = newFileName;
+    }
+
+    public String getFileType(){
+        return fileType;
+    }
+
+    public void setFileType(String fileType){
+        this.fileType = fileType;
+    }
+
+    public String getFileUrl(){
+        return fileUrl;
+    }
+
+    public void setFileUrl(String fileUrl){
+        this.fileUrl = fileUrl;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

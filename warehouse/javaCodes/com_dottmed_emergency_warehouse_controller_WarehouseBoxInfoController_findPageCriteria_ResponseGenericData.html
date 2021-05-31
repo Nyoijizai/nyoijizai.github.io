@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private PageResult data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public PageResult getData(){
+        return data;
+    }
+
+    public void setData(PageResult data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class PageResult implements Serializable{
+
+    private int currentPage; //当前页(分页工具类Pageable第一页下标为0)
+    private int pageSize; //页大小
+    private int pageTotal; //总页数
+    private long totalNum; //总条数
+    private WarehouseBoxInfo[] content; //返回对象List
+
+    public int getCurrentPage(){
+        return currentPage;
+    }
+
+    public void setCurrentPage(int currentPage){
+        this.currentPage = currentPage;
+    }
+
+    public int getPageSize(){
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public int getPageTotal(){
+        return pageTotal;
+    }
+
+    public void setPageTotal(int pageTotal){
+        this.pageTotal = pageTotal;
+    }
+
+    public long getTotalNum(){
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum){
+        this.totalNum = totalNum;
+    }
+
+    public WarehouseBoxInfo[] getContent(){
+        return content;
+    }
+
+    public void setContent(WarehouseBoxInfo[] content){
+        this.content = content;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class WarehouseBoxInfo implements Serializable{
+
+    private int id; //主键
+    private String boxName; //箱子名称
+    private String boxCode; //箱子编码/RFID
+    private String assetCode; //企业资产编码，如：华西资产编码
+    private int departmentType; //科室类型：1 急救/重症， 2 门诊， 3 后勤， 4 指挥， 5 重症， 6 超声， 7 清创， 8 留观， 9 药房， 10 耗材， 11 手术， 12 防疫/隔离， 13 消毒， 14 住院， 15 检验
+    private String unit; //单位：台、件、个、袋、包等
+    private String weight; //重量(kg)
+    private int size; //尺寸：1 一箱一桌(800x600x600)， 2 一箱两柜(1200x800x800)， 3 一箱一柜(1200x800x400)， 4 其它箱子
+    private String rackNumber; //货架编号
+    private int rackPosition; //货架位置：0 未知， 1 一层（下）， 2 二层（中）， 3 三层（上）， 4 四层（顶）
+    private int status; //箱子状态：1 在库， 2 已出库， 3 待出库
+    private int maximumCapacity; //箱子最大容量
+    private int materialCount; //箱子中物资数量
+    private int createMan; //创建人
+    private String createTime; //创建时间
+    private String remark; //备注
+    private WarehouseBoxImage[] boxImages; //箱子图片列表
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getBoxName(){
+        return boxName;
+    }
+
+    public void setBoxName(String boxName){
+        this.boxName = boxName;
+    }
+
+    public String getBoxCode(){
+        return boxCode;
+    }
+
+    public void setBoxCode(String boxCode){
+        this.boxCode = boxCode;
+    }
+
+    public String getAssetCode(){
+        return assetCode;
+    }
+
+    public void setAssetCode(String assetCode){
+        this.assetCode = assetCode;
+    }
+
+    public int getDepartmentType(){
+        return departmentType;
+    }
+
+    public void setDepartmentType(int departmentType){
+        this.departmentType = departmentType;
+    }
+
+    public String getUnit(){
+        return unit;
+    }
+
+    public void setUnit(String unit){
+        this.unit = unit;
+    }
+
+    public String getWeight(){
+        return weight;
+    }
+
+    public void setWeight(String weight){
+        this.weight = weight;
+    }
+
+    public int getSize(){
+        return size;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+
+    public String getRackNumber(){
+        return rackNumber;
+    }
+
+    public void setRackNumber(String rackNumber){
+        this.rackNumber = rackNumber;
+    }
+
+    public int getRackPosition(){
+        return rackPosition;
+    }
+
+    public void setRackPosition(int rackPosition){
+        this.rackPosition = rackPosition;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public int getMaximumCapacity(){
+        return maximumCapacity;
+    }
+
+    public void setMaximumCapacity(int maximumCapacity){
+        this.maximumCapacity = maximumCapacity;
+    }
+
+    public int getMaterialCount(){
+        return materialCount;
+    }
+
+    public void setMaterialCount(int materialCount){
+        this.materialCount = materialCount;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public String getRemark(){
+        return remark;
+    }
+
+    public void setRemark(String remark){
+        this.remark = remark;
+    }
+
+    public WarehouseBoxImage[] getBoxImages(){
+        return boxImages;
+    }
+
+    public void setBoxImages(WarehouseBoxImage[] boxImages){
+        this.boxImages = boxImages;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class WarehouseBoxImage implements Serializable{
+
+    private int id; //主键
+    private int boxId; //箱子ID
+    private String oldFileName; //文件原名称
+    private String newFileName; //文件新名称
+    private String fileType; //文件后缀名
+    private String fileUrl; //文件访问地址
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getBoxId(){
+        return boxId;
+    }
+
+    public void setBoxId(int boxId){
+        this.boxId = boxId;
+    }
+
+    public String getOldFileName(){
+        return oldFileName;
+    }
+
+    public void setOldFileName(String oldFileName){
+        this.oldFileName = oldFileName;
+    }
+
+    public String getNewFileName(){
+        return newFileName;
+    }
+
+    public void setNewFileName(String newFileName){
+        this.newFileName = newFileName;
+    }
+
+    public String getFileType(){
+        return fileType;
+    }
+
+    public void setFileType(String fileType){
+        this.fileType = fileType;
+    }
+
+    public String getFileUrl(){
+        return fileUrl;
+    }
+
+    public void setFileUrl(String fileUrl){
+        this.fileUrl = fileUrl;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

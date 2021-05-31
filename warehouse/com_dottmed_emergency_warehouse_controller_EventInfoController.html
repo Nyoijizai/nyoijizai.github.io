@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>事件信息</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                dottmedWarehouse
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 事件信息
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#open">
+                        启动当前将要处理的事件
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#close">
+                        关闭当前将要处理的事件
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#add">
+                        新增事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#update">
+                        修改事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#findById">
+                        查找事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#deleteById">
+                        删除事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#deleteBatch">
+                        批量删除事件信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#findList">
+                        全部事件信息-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_EventInfoController.html#findAll">
+                        全部事件信息-无分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户管理
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#loginUser">
+                        用户登录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#loginOut">
+                        退出登录
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#addUser">
+                        新增用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#updateUser">
+                        修改用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#findUser">
+                        查找用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#deleteById">
+                        删除用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#deleteBatch">
+                        批量删除用户
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#getLoginInfo">
+                        获取当前登录用户信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#findAll">
+                        全部用户信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_SysUserController.html#findList">
+                        全部用户信息-分页
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 仓库批量待处理清单
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#add">
+                        新增仓库批量待处理清单
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#update">
+                        修改仓库批量待处理清单
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findById">
+                        查找仓库批量待处理清单
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#deleteById">
+                        删除仓库批量待处理清单
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#deleteBatch">
+                        批量删除仓库批量待处理清单
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findAll">
+                        全部仓库批量待处理清单-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findList">
+                        全部仓库批量待处理清单-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findPageCriteria">
+                        全部仓库批量待处理清单-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 仓库箱子信息
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#add">
+                        新增仓库箱子信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#update">
+                        修改仓库箱子信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findById">
+                        查找仓库箱子信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#deleteById">
+                        删除仓库箱子信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#deleteBatch">
+                        批量删除仓库箱子信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findAll">
+                        全部仓库箱子信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findList">
+                        全部仓库箱子信息-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findPageCriteria">
+                        全部仓库箱子信息-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> 仓库物资信息
+            </div>
+            <div id="collapse4" class="collapse " aria-labelledby="heading4">
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#add">
+                        新增仓库物资信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#update">
+                        修改仓库物资信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findById">
+                        查找仓库物资信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#deleteById">
+                        删除仓库物资信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#deleteBatch">
+                        批量删除仓库物资信息
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findAll">
+                        全部仓库物资信息-无分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findList">
+                        全部仓库物资信息-分页
+                    </a>
+                    <a class="catalog-item" href="com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findPageCriteria">
+                        全部仓库物资信息-分页-复杂条件
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="open"><a href="#">启动当前将要处理的事件 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/open</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
+	"id":"int //主键",
+	"eventName":"string //事件名称",
+	"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+	"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+	"maintenance":"int //维修/保养：1 维修， 2 保养",
+	"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+	"remark":"string //描述",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_open_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_open_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="close"><a href="#">关闭当前将要处理的事件 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/close</code>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_close_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_close_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="add"><a href="#">新增事件信息 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/add</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
+	"id":"int //主键",
+	"eventName":"string //事件名称",
+	"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+	"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+	"maintenance":"int //维修/保养：1 维修， 2 保养",
+	"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+	"remark":"string //描述",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_add_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_add_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="update"><a href="#">修改事件信息 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/update</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
+	"id":"int //主键",
+	"eventName":"string //事件名称",
+	"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+	"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+	"maintenance":"int //维修/保养：1 维修， 2 保养",
+	"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+	"remark":"string //描述",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_update_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_update_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findById"><a href="#">查找事件信息 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/find</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findById_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findById_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="deleteById"><a href="#">删除事件信息 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/delete</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_deleteById_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_deleteById_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="deleteBatch"><a href="#">批量删除事件信息 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/deleteBatch</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">[{
+	"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+	"pageSize":"int //页大小",
+	"pageOrders":[{
+		"direction":"string //排序方式：asc | desc",
+		"property":"string //排序字段"
+	}],
+	"pageOrdersJSON":"string //字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则\t   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端",
+	"id":"int //主键",
+	"eventName":"string //事件名称",
+	"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+	"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+	"maintenance":"int //维修/保养：1 维修， 2 保养",
+	"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+	"remark":"string //描述",
+	"createMan":"int //创建人(登录用户表ID)",
+	"createTime":"date //创建时间"
+}]</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_deleteBatch_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_deleteBatch_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findList"><a href="#">全部事件信息-分页 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/list</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>eventName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>事件名称</td>
+                    </tr>
+                    <tr>
+                        <td>eventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件类型：1 应急救援， 2 演练， 3 培训， 4 其他</td>
+                    </tr>
+                    <tr>
+                        <td>eventSource</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门</td>
+                    </tr>
+                    <tr>
+                        <td>maintenance</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>维修/保养：1 维修， 2 保养</td>
+                    </tr>
+                    <tr>
+                        <td>eventStatus</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件状态：1 进行中， 2 已结束</td>
+                    </tr>
+                    <tr>
+                        <td>remark</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人(登录用户表ID)</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":{
+		"currentPage":"int //当前页(分页工具类Pageable第一页下标为0)",
+		"pageSize":"int //页大小",
+		"pageTotal":"int //总页数",
+		"totalNum":"long //总条数",
+		"content":[{
+			"id":"int //主键",
+			"eventName":"string //事件名称",
+			"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+			"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+			"maintenance":"int //维修/保养：1 维修， 2 保养",
+			"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+			"remark":"string //描述",
+			"createMan":"int //创建人(登录用户表ID)",
+			"createTime":"date //创建时间"
+		}]
+	}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findList_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findList_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="findAll"><a href="#">全部事件信息-无分页 </a></h2>
+    <p class="text-muted"><em>作者: zhangWei</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/event/info/all</code>
+        <span class="label label-default">GET</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>currentPage</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>当前页(分页工具类Pageable第一页下标为0)</td>
+                    </tr>
+                    <tr>
+                        <td>pageSize</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>页大小</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.direction</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序方式：asc | desc</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrders.property</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>排序字段</td>
+                    </tr>
+                    <tr>
+                        <td>pageOrdersJSON</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>字段排序规则列表，要求JSON字符串格式，适用get请求时的字段排序规则	   格式:[{'direction':'desc','property':'id'}]   进行URL编码后传到后端</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>主键</td>
+                    </tr>
+                    <tr>
+                        <td>eventName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>事件名称</td>
+                    </tr>
+                    <tr>
+                        <td>eventType</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件类型：1 应急救援， 2 演练， 3 培训， 4 其他</td>
+                    </tr>
+                    <tr>
+                        <td>eventSource</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门</td>
+                    </tr>
+                    <tr>
+                        <td>maintenance</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>维修/保养：1 维修， 2 保养</td>
+                    </tr>
+                    <tr>
+                        <td>eventStatus</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>事件状态：1 进行中， 2 已结束</td>
+                    </tr>
+                    <tr>
+                        <td>remark</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>createMan</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td>创建人(登录用户表ID)</td>
+                    </tr>
+                    <tr>
+                        <td>createTime</td>
+                        <td>date</td>
+                        <td>否</td>
+                        <td>创建时间</td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"int //返回码",
+	"message":"string //返回消息",
+	"data":[{
+		"id":"int //主键",
+		"eventName":"string //事件名称",
+		"eventType":"int //事件类型：1 应急救援， 2 演练， 3 培训， 4 其他",
+		"eventSource":"int //事件来源：1 WHO， 2 国家卫健委， 3 省卫健委， 4 其他有关部门",
+		"maintenance":"int //维修/保养：1 维修， 2 保养",
+		"eventStatus":"int //事件状态：1 进行中， 2 已结束",
+		"remark":"string //描述",
+		"createMan":"int //创建人(登录用户表ID)",
+		"createTime":"date //创建时间"
+	}]
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findAll_ResponseGenericData.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/com_dottmed_emergency_warehouse_controller_EventInfoController_findAll_ResponseGenericData.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '事件信息.启动当前将要处理的事件', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#open'},
+            {name: '事件信息.关闭当前将要处理的事件', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#close'},
+            {name: '事件信息.新增事件信息', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#add'},
+            {name: '事件信息.修改事件信息', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#update'},
+            {name: '事件信息.查找事件信息', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#findById'},
+            {name: '事件信息.删除事件信息', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#deleteById'},
+            {name: '事件信息.批量删除事件信息', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#deleteBatch'},
+            {name: '事件信息.全部事件信息-分页', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#findList'},
+            {name: '事件信息.全部事件信息-无分页', url: 'com_dottmed_emergency_warehouse_controller_EventInfoController.html#findAll'},
+            {name: '用户管理.用户登录', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#loginUser'},
+            {name: '用户管理.退出登录', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#loginOut'},
+            {name: '用户管理.新增用户', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#addUser'},
+            {name: '用户管理.修改用户', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#updateUser'},
+            {name: '用户管理.查找用户', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#findUser'},
+            {name: '用户管理.删除用户', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#deleteById'},
+            {name: '用户管理.批量删除用户', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#deleteBatch'},
+            {name: '用户管理.获取当前登录用户信息', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#getLoginInfo'},
+            {name: '用户管理.全部用户信息-无分页', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#findAll'},
+            {name: '用户管理.全部用户信息-分页', url: 'com_dottmed_emergency_warehouse_controller_SysUserController.html#findList'},
+            {name: '仓库批量待处理清单.新增仓库批量待处理清单', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#add'},
+            {name: '仓库批量待处理清单.修改仓库批量待处理清单', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#update'},
+            {name: '仓库批量待处理清单.查找仓库批量待处理清单', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findById'},
+            {name: '仓库批量待处理清单.删除仓库批量待处理清单', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#deleteById'},
+            {name: '仓库批量待处理清单.批量删除仓库批量待处理清单', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#deleteBatch'},
+            {name: '仓库批量待处理清单.全部仓库批量待处理清单-无分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findAll'},
+            {name: '仓库批量待处理清单.全部仓库批量待处理清单-分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findList'},
+            {name: '仓库批量待处理清单.全部仓库批量待处理清单-分页-复杂条件', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBatchPendingListController.html#findPageCriteria'},
+            {name: '仓库箱子信息.新增仓库箱子信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#add'},
+            {name: '仓库箱子信息.修改仓库箱子信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#update'},
+            {name: '仓库箱子信息.查找仓库箱子信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findById'},
+            {name: '仓库箱子信息.删除仓库箱子信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#deleteById'},
+            {name: '仓库箱子信息.批量删除仓库箱子信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#deleteBatch'},
+            {name: '仓库箱子信息.全部仓库箱子信息-无分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findAll'},
+            {name: '仓库箱子信息.全部仓库箱子信息-分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findList'},
+            {name: '仓库箱子信息.全部仓库箱子信息-分页-复杂条件', url: 'com_dottmed_emergency_warehouse_controller_WarehouseBoxInfoController.html#findPageCriteria'},
+            {name: '仓库物资信息.新增仓库物资信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#add'},
+            {name: '仓库物资信息.修改仓库物资信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#update'},
+            {name: '仓库物资信息.查找仓库物资信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findById'},
+            {name: '仓库物资信息.删除仓库物资信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#deleteById'},
+            {name: '仓库物资信息.批量删除仓库物资信息', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#deleteBatch'},
+            {name: '仓库物资信息.全部仓库物资信息-无分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findAll'},
+            {name: '仓库物资信息.全部仓库物资信息-分页', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findList'},
+            {name: '仓库物资信息.全部仓库物资信息-分页-复杂条件', url: 'com_dottmed_emergency_warehouse_controller_WarehouseMaterialInfoController.html#findPageCriteria'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

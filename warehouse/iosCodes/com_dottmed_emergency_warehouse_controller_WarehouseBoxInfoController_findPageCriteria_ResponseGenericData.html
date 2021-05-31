@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) PageResult data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface PageResult : NSObject
+
+//当前页(分页工具类Pageable第一页下标为0)
+@property (nonatomic, strong) NSInteger currentPage;
+//页大小
+@property (nonatomic, strong) NSInteger pageSize;
+//总页数
+@property (nonatomic, strong) NSInteger pageTotal;
+//总条数
+@property (nonatomic, strong) long totalNum;
+//返回对象List
+@property (nonatomic, strong) WarehouseBoxInfo[] content;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface WarehouseBoxInfo : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger id;
+//箱子名称
+@property (nonatomic, assign) NSString boxName;
+//箱子编码/RFID
+@property (nonatomic, assign) NSString boxCode;
+//企业资产编码，如：华西资产编码
+@property (nonatomic, assign) NSString assetCode;
+//科室类型：1 急救/重症， 2 门诊， 3 后勤， 4 指挥， 5 重症， 6 超声， 7 清创， 8 留观， 9 药房， 10 耗材， 11 手术， 12 防疫/隔离， 13 消毒， 14 住院， 15 检验
+@property (nonatomic, strong) NSInteger departmentType;
+//单位：台、件、个、袋、包等
+@property (nonatomic, assign) NSString unit;
+//重量(kg)
+@property (nonatomic, assign) NSString weight;
+//尺寸：1 一箱一桌(800x600x600)， 2 一箱两柜(1200x800x800)， 3 一箱一柜(1200x800x400)， 4 其它箱子
+@property (nonatomic, strong) NSInteger size;
+//货架编号
+@property (nonatomic, assign) NSString rackNumber;
+//货架位置：0 未知， 1 一层（下）， 2 二层（中）， 3 三层（上）， 4 四层（顶）
+@property (nonatomic, strong) NSInteger rackPosition;
+//箱子状态：1 在库， 2 已出库， 3 待出库
+@property (nonatomic, strong) NSInteger status;
+//箱子最大容量
+@property (nonatomic, strong) NSInteger maximumCapacity;
+//箱子中物资数量
+@property (nonatomic, strong) NSInteger materialCount;
+//创建人
+@property (nonatomic, strong) NSInteger createMan;
+//创建时间
+@property (nonatomic, assign) NSString createTime;
+//备注
+@property (nonatomic, assign) NSString remark;
+//箱子图片列表
+@property (nonatomic, strong) WarehouseBoxImage[] boxImages;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface WarehouseBoxImage : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger id;
+//箱子ID
+@property (nonatomic, strong) NSInteger boxId;
+//文件原名称
+@property (nonatomic, assign) NSString oldFileName;
+//文件新名称
+@property (nonatomic, assign) NSString newFileName;
+//文件后缀名
+@property (nonatomic, assign) NSString fileType;
+//文件访问地址
+@property (nonatomic, assign) NSString fileUrl;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

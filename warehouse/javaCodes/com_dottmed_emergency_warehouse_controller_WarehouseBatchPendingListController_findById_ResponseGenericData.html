@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class ResponseGenericData implements Serializable{
+
+    private int code; //返回码
+    private String message; //返回消息
+    private WarehouseBatchPendingList data; //返回数据
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
+    }
+
+    public WarehouseBatchPendingList getData(){
+        return data;
+    }
+
+    public void setData(WarehouseBatchPendingList data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class WarehouseBatchPendingList implements Serializable{
+
+    private int id; //主键
+    private int operationType; //操作类型：1 借出， 2 维修， 3 保养
+    private int resourceType; //资源类型：1 物资， 2 箱子
+    private int materialId; //物资ID
+    private int boxId; //箱子ID
+    private int createMan; //创建人
+    private String createTime; //创建时间
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getOperationType(){
+        return operationType;
+    }
+
+    public void setOperationType(int operationType){
+        this.operationType = operationType;
+    }
+
+    public int getResourceType(){
+        return resourceType;
+    }
+
+    public void setResourceType(int resourceType){
+        this.resourceType = resourceType;
+    }
+
+    public int getMaterialId(){
+        return materialId;
+    }
+
+    public void setMaterialId(int materialId){
+        this.materialId = materialId;
+    }
+
+    public int getBoxId(){
+        return boxId;
+    }
+
+    public void setBoxId(int boxId){
+        this.boxId = boxId;
+    }
+
+    public int getCreateMan(){
+        return createMan;
+    }
+
+    public void setCreateMan(int createMan){
+        this.createMan = createMan;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

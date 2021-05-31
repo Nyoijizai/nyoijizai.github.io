@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResponseGenericData</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResponseGenericData : NSObject
+
+//返回码
+@property (nonatomic, strong) NSInteger code;
+//返回消息
+@property (nonatomic, assign) NSString message;
+//返回数据
+@property (nonatomic, strong) SysUser data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface SysUser : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger id;
+//用户姓名
+@property (nonatomic, assign) NSString userName;
+//联系手机
+@property (nonatomic, assign) NSString phone;
+//登录账号
+@property (nonatomic, assign) NSString loginAccount;
+//登录密码
+@property (nonatomic, assign) NSString loginPassword;
+//账号类型：1 后台管理， 2 仓库管理， 3 应急办， 4 指挥员
+@property (nonatomic, strong) NSInteger userType;
+//工号
+@property (nonatomic, assign) NSString workNumber;
+//创建人
+@property (nonatomic, strong) NSInteger createMan;
+//创建时间
+@property (nonatomic, assign) NSString createTime;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
